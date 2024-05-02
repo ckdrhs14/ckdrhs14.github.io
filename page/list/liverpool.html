@@ -1,0 +1,129 @@
+<!--
+   ██╗	  ███████╗███████╗   ███████╗   ████████╗
+   ██║	  ██╔════╝██╔════╝   ██╔════╝   ██╔═════╝
+   ██║	  ███████╗███████╗   ██║        ██║
+   ██║	  ██╔════╝██╔════╝   ██║        ██║   ██╗
+   ██████╗███████╗███████╗██╗███████╗██╗████████║
+   ╚═════╝╚══════╝╚══════╝╚═╝╚══════╝╚═╝╚═══════╝
+-->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="stylesheet" href="../../include/css/swiper.min.css">
+	<link href="../../include/css/default.css" rel="stylesheet">
+	<link href="../../include/css/style.css" rel="stylesheet">
+	<link href="../../include/css/content.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../../include/js/swiper.min.js"></script>
+	<script src="../../include/js/script.js"></script>
+	<title>LEE.c.g</title>
+</head>
+
+
+<body>
+	<div class="overlay">
+		<ul>
+			<li><a href="../../index.html">HOME</a></li>
+			<li><a href="../work_portfolio.html">WORK PORTFOLIO</a></li>
+			<li><a href="../skill_portfolio.html">SKILL PORTFOLIO</a></li>
+			<li><a href="../project.html">TIMELINE</a></li>
+		</ul>
+		<a href="javascript:void(0);" class="closeBtn" style="opacity: 1;">창 닫기</a>
+	</div>
+
+	<header class="header">
+		<div class="logo">
+			<a href="../../index.html">LEE.c.g</a>
+		</div>
+
+		<div class="menu">
+			<div class="path">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</header>
+
+	
+	<div class="container listWrap">
+		<div class="contentWrap">
+			<div class="list">
+				<div class="titleWrap">
+					<h3 class="title">리버풀<span>(Liverpool)</span></h3>
+				</div>
+				<div class="swiper listSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/liverpool/liverpool.png">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/liverpool/liverpool.png">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/liverpool/liverpool.png">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<ul class="infoArea">
+					<li>
+						<div>
+							<h3 class="title">OverView</h3>
+							<p>리버풀 팬페이지 입니다.
+							<br>2018년 퍼블리셔를 시작하던 시절 새벽에 열린 리버풀 VS 레알마드리드 챔스결승을 보고 만들었던 페이지 입니다.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h3 class="title">Detail Info</h3>
+							<p><span>사업기간</span>2018.06 ~ 2018.06</p>
+							<p><span>발주처</span>-</p>
+							<p><span>작업인원</span>100%</p>
+							<p><span>URL</span><a href="https://www.yjlib.go.kr/web/index.do" target="_blank" title="새창열림">https://www.yjlib.go.kr/web/index.do</a></p>
+						</div>
+					</li>
+				</ul>
+				<div class="btnGroup center">
+					<a href="../work_portfolio.html" class="btn">목록으로</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script>
+var swiper = new Swiper(".listSwiper", {
+		slidesPerView: 1,
+		loop: true,
+		speed : 800,
+		 pagination: {
+			el: ".swiper-pagination",
+			type: "progressbar",
+		  },
+		  navigation: {
+			nextEl: ".listSwiper .swiper-button-next",
+			prevEl: ".listSwiper .swiper-button-prev",
+		  },
+		autoplay : false,
+	});
+</script>
+  
+
+</html>

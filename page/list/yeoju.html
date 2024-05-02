@@ -1,0 +1,130 @@
+<!--
+   ██╗	  ███████╗███████╗   ███████╗   ████████╗
+   ██║	  ██╔════╝██╔════╝   ██╔════╝   ██╔═════╝
+   ██║	  ███████╗███████╗   ██║        ██║
+   ██║	  ██╔════╝██╔════╝   ██║        ██║   ██╗
+   ██████╗███████╗███████╗██╗███████╗██╗████████║
+   ╚═════╝╚══════╝╚══════╝╚═╝╚══════╝╚═╝╚═══════╝
+-->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="stylesheet" href="../../include/css/swiper.min.css">
+	<link href="../../include/css/default.css" rel="stylesheet">
+	<link href="../../include/css/style.css" rel="stylesheet">
+	<link href="../../include/css/content.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../../include/js/swiper.min.js"></script>
+	<script src="../../include/js/script.js"></script>
+	<title>LEE.c.g</title>
+</head>
+
+
+<body>
+	<div class="overlay">
+		<ul>
+			<li><a href="../../index.html">HOME</a></li>
+			<li><a href="../work_portfolio.html">WORK PORTFOLIO</a></li>
+			<li><a href="../skill_portfolio.html">SKILL PORTFOLIO</a></li>
+			<li><a href="../project.html">TIMELINE</a></li>
+		</ul>
+		<a href="javascript:void(0);" class="closeBtn" style="opacity: 1;">창 닫기</a>
+	</div>
+
+	<header class="header">
+		<div class="logo">
+			<a href="../../index.html">LEE.c.g</a>
+		</div>
+
+		<div class="menu">
+			<div class="path">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</header>
+
+	
+	<div class="container listWrap">
+		<div class="contentWrap">
+			<div class="list">
+				<div class="titleWrap">
+					<h3 class="title">여주시립도서관<span>(Yeoju Library)</span></h3>
+				</div>
+				<div class="swiper listSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/yeoju/yeoju.png">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/yeoju/yeoju2.png">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/yeoju/yeoju3.png">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<ul class="infoArea">
+					<li>
+						<div>
+							<h3 class="title">OverView</h3>
+							<p>여주시립도서관 신규 구축 사업입니다.
+							<br>여주시립도서관 통합페이지로 svg 등 새로운 기능들을 활용해보았던 사이트입니다.
+							<br>레이아웃 및 소스도 최대한 통일되도록 진행하였고 웹접근성도 추가로 진행하였던 사업입니다.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h3 class="title">Detail Info</h3>
+							<p><span>사업기간</span>2023.04 ~ 2023.11</p>
+							<p><span>발주처</span>여주시립도서관</p>
+							<p><span>작업인원</span>PM 1 / Designer 1 / Publisher 1 / Developer 1</p>
+							<p><span>URL</span><a href="https://www.yjlib.go.kr/web/index.do" target="_blank" title="새창열림">https://www.yjlib.go.kr/web/index.do</a></p>
+						</div>
+					</li>
+				</ul>
+				<div class="btnGroup center">
+					<a href="../work_portfolio.html" class="btn">목록으로</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script>
+var swiper = new Swiper(".listSwiper", {
+		slidesPerView: 1,
+		loop: true,
+		speed : 800,
+		 pagination: {
+			el: ".swiper-pagination",
+			type: "progressbar",
+		  },
+		  navigation: {
+			nextEl: ".listSwiper .swiper-button-next",
+			prevEl: ".listSwiper .swiper-button-prev",
+		  },
+		autoplay : false,
+	});
+</script>
+  
+
+</html>

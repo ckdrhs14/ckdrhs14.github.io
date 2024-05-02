@@ -1,0 +1,131 @@
+<!--
+   ██╗	  ███████╗███████╗   ███████╗   ████████╗
+   ██║	  ██╔════╝██╔════╝   ██╔════╝   ██╔═════╝
+   ██║	  ███████╗███████╗   ██║        ██║
+   ██║	  ██╔════╝██╔════╝   ██║        ██║   ██╗
+   ██████╗███████╗███████╗██╗███████╗██╗████████║
+   ╚═════╝╚══════╝╚══════╝╚═╝╚══════╝╚═╝╚═══════╝
+-->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="stylesheet" href="../../include/css/swiper.min.css">
+	<link href="../../include/css/default.css" rel="stylesheet">
+	<link href="../../include/css/style.css" rel="stylesheet">
+	<link href="../../include/css/content.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../../include/js/swiper.min.js"></script>
+	<script src="../../include/js/script.js"></script>
+	<title>LEE.c.g</title>
+</head>
+
+
+<body>
+	<div class="overlay">
+		<ul>
+			<li><a href="../../index.html">HOME</a></li>
+			<li><a href="../work_portfolio.html">WORK PORTFOLIO</a></li>
+			<li><a href="../skill_portfolio.html">SKILL PORTFOLIO</a></li>
+			<li><a href="../project.html">TIMELINE</a></li>
+		</ul>
+		<a href="javascript:void(0);" class="closeBtn" style="opacity: 1;">창 닫기</a>
+	</div>
+
+	<header class="header">
+		<div class="logo">
+			<a href="../../index.html">LEE.c.g</a>
+		</div>
+
+		<div class="menu">
+			<div class="path">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</header>
+
+	
+	<div class="container listWrap">
+		<div class="contentWrap">
+			<div class="list">
+				<div class="titleWrap">
+					<h3 class="title">대현인사이드<span>(DaeHyun Inside)</span></h3>
+				</div>
+				<div class="swiper listSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/daehyun/daehyun.png">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/daehyun/daehyun2.png">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgArea">
+								<img src="../../include/image/list/daehyun/daehyun3.png">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<ul class="infoArea">
+					<li>
+						<div>
+							<h3 class="title">OverView</h3>
+							<p>대현인사이드 메뉴 및 상세페이지 개편작업입니다.
+								<br>MOJO.S.PHINE, DEWL, ZOOC, CC collect 등 자사 브랜드를 강조하고자 하여,<br> 각 브랜딩 페이지 신설 및
+								브랜딩페이지의 허브페이지 작업을 진행하였고,<br>
+								기존 상세페이지의 개선사항이었던 장바구니 개편 및 상하 스크롤링, 모달팝업 등 작업을 진행하였습니다.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h3 class="title">Detail Info</h3>
+							<p><span>사업기간</span>2020.08 ~ 2020.11</p>
+							<p><span>발주처</span>(주)대현</p>
+							<p><span>작업인원</span>PM 1 / Designer 2 / Publisher 2 / Developer 2</p>
+							<p><span>URL</span><a href="https://www.daehyuninside.com/" target="_blank" title="새창열림">https://www.daehyuninside.com/</a></p>
+						</div>
+					</li>
+				</ul>
+				<div class="btnGroup center">
+					<a href="../work_portfolio.html" class="btn">목록으로</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script>
+var swiper = new Swiper(".listSwiper", {
+		slidesPerView: 1,
+		loop: true,
+		speed : 800,
+		 pagination: {
+			el: ".swiper-pagination",
+			type: "progressbar",
+		  },
+		  navigation: {
+			nextEl: ".listSwiper .swiper-button-next",
+			prevEl: ".listSwiper .swiper-button-prev",
+		  },
+		autoplay : false,
+	});
+</script>
+  
+
+</html>

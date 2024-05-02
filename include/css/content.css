@@ -1,0 +1,60 @@
+.container {position:relative; margin:80px 0 120px 0;}
+.contentWrap {width:1200px; margin:0 auto; padding:50px 0 120px 0;}
+.sVisualWrap {position:relative; display:flex; align-items:center; justify-content:center; width:100%; height:300px; background:url("../image/skill_bg.jpg") 50% 50% no-repeat; margin-bottom:30px; filter:grayscale(1); color:#fff; background-size:cover;}
+.sVisualWrap.work {background-image:url("../image/work_bg.jpg");}
+.sVisualWrap.skill {background-image:url("../image/skill_bg.jpg");}
+.sVisualWrap h3 {position:absolute; font-size:78px; font-weight:800; letter-spacing:-0.035em;}
+.sVisualWrap h3::before {display:block; content:''; width:80px; height:3px; background-color:#fff; position:absolute; bottom:0; left:50%; transform:translateX(-50%);}
+.sVisualWrap::before {display:block; content:''; width:100%; height:100%; background:rgba(0,0,0,.75); position:absolute; left:0; top:0;}
+
+.tab {position:relative; display:flex; overflow:hidden; border-width:1px 0; padding:0; box-sizing:border-box; font-weight:bold; margin-bottom:50px;}
+.tab * {z-index:2;}
+.tab div {width:25%; height:60px; text-align:center; transition: transform 0.3s ease-in; color:#fff;}
+.tab div a {display:block; height:60px; line-height:60px; font-size:1.2em; color:#fff; transition: color 0s; letter-spacing:-0.05em; font-weight:400;}
+.tab div a:hover {box-sizing:border-box;}
+.tab div.on a {color:#000; font-weight:700;}
+.glider {position: absolute; display: flex; z-index: 1; height: 100%; width: 25%; background-color: #fff; transition: 0.25s ease-out; height:60px; border-radius:30px; box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;}
+
+.pjList.col3 {flex-wrap:wrap;}
+.pjList.col3 li {width:calc(33.333% - 30px); margin:15px; margin-bottom:30px;}
+.pjList li .imgArea {position:relative; border-radius:0 0 60px 0 / 0 0 75px 0; overflow:hidden;}
+.pjList li .imgArea img {border-radius:0 0 60px 0 / 0 0 75px 0;}
+.pjList li .imgArea::before {display:block; content:''; width:100%; height:100%; background-color:rgba(0,0,0,.4); opacity:0; position:absolute; transition:all .2s;}
+.pjList li:hover .imgArea::before {opacity:1;}
+.pjList li .txtArea {margin-top:15px;}
+.pjList li .txtArea .title {font-weight:700; font-size:28px; margin-bottom:20px;}
+.pjList li .txtArea .title span {font-size:18px; font-weight:400; margin-left:5px;}
+.pjList li .txtArea p {display:flex; font-size:14px;}
+.pjList li .txtArea p b {padding:1px 7px; border-radius:4px; margin-right:12px; min-width:70px; height:24px; display:inline-block; text-align:center; font-size:14px; background:#fff; color:#000;}
+.pjList li .txtArea p + p {margin-top:10px;}
+.pjList li .txtArea .color {margin-top:10px; display:flex; align-items:center;}
+.pjList li .txtArea .color p {display:inline-flex; align-items:center; font-size:14px; font-weight:bold;}
+.pjList li .txtArea .color p > span {display:inline-block; width:14px; height:14px; position:relative; top:1px; margin:0 6px 0 12px;} 
+.pjList li .txtArea .color p + p {margin-left:10px; margin-top:0;}
+.pjList li .txtArea .row {display:flex; align-items:center;}
+.pjList li .txtArea .row.f_start {align-items:flex-start; word-break:keep-all; margin-top:10px;}
+.pjList li .txtArea .row.f_start div {display:flex; flex-wrap:wrap; align-items:center; width:100%; font-size:14px;}
+.pjList li .txtArea .row.f_start div + div {margin-top:7px;}
+.pjList li .txtArea .row.f_start div img {margin-right:5px; width:20px; height:20px;}
+.pjList li .btnGroup {margin-top:60px;}
+
+
+.listWrap {position:relative;}
+.listWrap .contentWrap {width:900px;}
+.list {position:relative;}
+.list::before {display:block; content:''; width:100px; height:1px; background-color:#fff; position:absolute; left:-130px; top:25px;}
+.list .titleWrap .title {position:relative; font-weight:700; font-size:48px; line-height:1; margin-bottom:30px;}
+.list .titleWrap .title span {font-size:24px; font-weight:500; margin-left:10px;}
+.list .listSwiper {position:relative; overflow:hidden; padding-bottom:30px;}
+.list .listSwiper .swiper-pagination-progressbar {position:absolute; top:auto; bottom:0; height:3px; background-color:#555;}
+.list .listSwiper .swiper-pagination-progressbar-fill {background:#c9c9c9; height:3px;}
+.list .listSwiper .swiper-button-prev, .list .listSwiper .swiper-button-next {width:85px; height:85px; background-size:85px;}
+.list .listSwiper .swiper-button-prev {background-image:url("../image/button/list_arrow_left.png"); left:-100px;}
+.list .listSwiper .swiper-button-next {background-image:url("../image/button/list_arrow_right.png"); right:-100px;}
+.list .imgArea {position:relative; width:100%; max-height:500px; overflow:hidden;}
+.list .infoArea {margin-top:50px; margin-bottom:80px;}
+.list .infoArea li .title {font-size:24px; margin-bottom:5px;}
+.list .infoArea li + li {margin-top:25px;}
+.list .infoArea li p {display:flex; color:#c9c9c9;}
+.list .infoArea li p span {display:inline-block; min-width:100px; color:#9b815d; font-weight:600;}
+.list .infoArea li p b {font-weight:400; color:#c9c9c9;}
