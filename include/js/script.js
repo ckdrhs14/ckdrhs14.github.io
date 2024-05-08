@@ -119,9 +119,26 @@ $(window).scroll(function() {
 	const section1Height = $(".section1").height() - 60;
 	const section2Height = $(".section2").height();
 	
-	if($(window).scrollTop() > section1Height) {
+	if($(window).scrollTop() > 1) {
 		$(".fix_bn").addClass("on");
 	} else {
 		$(".fix_bn").removeClass("on");
 	}
+});
+
+$(function(){
+	$(".listWrap").prepend('<div class="videoBg"><video muted="" autoplay="" loop=""><source src="../../include/video/testVideo4.mp4" type="video/mp4"></video></div>');
+});
+
+$(function(){
+	moon.animate(
+	  { opacity: [.4], },
+	  {
+		duration: 7500,
+		iterations: Infinity,
+		direction: "alternate",
+		easing: "ease-in-out",
+		composite: "add" // *** this is the important line
+	  }
+	);
 });

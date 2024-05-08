@@ -11,6 +11,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="Generator" content="EditPlus®">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="Author" content="">
 	<meta name="Keywords" content="">
 	<meta name="Description" content="">
@@ -58,15 +59,31 @@
 		</div>
 	</header>
 	
+	<h1 class="clock"></h1>
+	<div class="fix_bn">
+		<div class="left">
+			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
+			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
+		</div>
+		<div class="right">
+			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
+			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
+		</div>
+	</div>
 
-	<div class="section1">
+	<div class="section section1">
 		<div class="videoBg">
+			<video muted autoplay loop>
+				<source src="include/video/testVideo5.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="videoBg2">
 			<video muted autoplay loop>
 				<source src="include/video/testVideo4.mp4" type="video/mp4">
 			</video>
 		</div>
 		<div class="objectArea">
-			<img src="include/image/planet_04.png" alt="" />
+			<img src="include/image/planet_04.png" alt="" / id="moon">
 		</div>
 
 		<div class="slogan">
@@ -77,18 +94,7 @@
 	
 
 	<div class="section section2">
-		<h1 class="clock"></h1>
-		<div class="fix_bn">
-			<div class="left">
-				<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-				<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-			</div>
-			<div class="right">
-				<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-				<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-			</div>
-		</div>
-
+		<canvas id="myCanvas" width="100%" height="100%"></canvas>
 		<div>
 			<div class="innerWrap">
 				<div class="box">
@@ -101,11 +107,11 @@
 						남들과 다른 생각을 가지고 코딩에 임하는 것에 즐거움을 느끼고,<br>
 						긍정적인 마인드로 코딩 및 사회생활에 임하고 있습니다.
 						<br><br>
-						쇼핑몰, 공공기관, 도서관사업소, 홈페이지 구축 및 리뉴얼을 주로 진행하였고<br>
+						쇼핑몰, 공공기관, 도서관사업소, 홈페이지 구축 및 리뉴얼을 주로 진행하였고<br class="mobileHide3">
 						웹접근성&웹호환성 인증 및 유지보수, 기타 디자인작업도 함께 진행하였습니다.
 						<br><br>
 						업무를 진행할 때 디자인이 바쁘면 간단한 리디자인은 직접 진행하기도 하고,
-						<br>JSP나 DB테이블명도 일이 많아 보이면 간단하게 수정하며 서로 도와가며 일하는 걸 좋아합니다.
+						<br class="mobileHide3">JSP나 DB테이블명도 일이 많아 보이면 간단하게 수정하며 서로 도와가며 일하는 걸 좋아합니다.
 						<br><br>
 						코딩은 계산적이지만 대인관계는 허물없이 지내는 <span class="highlight">긍정적인 자세</span>로 항상 임하고 있습니다.</p>
 					</div>
@@ -127,7 +133,7 @@
 				<div class="swiper workSwiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/idfMall.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_shop_01.jpg">
 								</div>
@@ -146,7 +152,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/daehyun.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_shop_02.jpg">
 								</div>
@@ -165,7 +171,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/giodano.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_shop_06.jpg">
 								</div>
@@ -184,7 +190,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/ihmall.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_shop_05.jpg">
 								</div>
@@ -203,7 +209,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/esthermall.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_shop_04.jpg">
 								</div>
@@ -222,7 +228,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/celecon.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_shop_03.jpg">
 								</div>
@@ -241,7 +247,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/seongnamCity-Onestop.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_22.jpg">
 								</div>
@@ -260,7 +266,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/seongnamCity.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_24.jpg">
 								</div>
@@ -279,7 +285,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/sneducare.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_14.jpg">
 								</div>
@@ -298,7 +304,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/seodaemun.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_11.jpg">
 								</div>
@@ -317,7 +323,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/gangnam.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_01.jpg">
 								</div>
@@ -336,7 +342,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/gdbookcafe.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_21.jpg">
 								</div>
@@ -355,7 +361,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/artBookBogo.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_12.jpg">
 								</div>
@@ -374,7 +380,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/goyang.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_04.jpg">
 								</div>
@@ -393,7 +399,7 @@
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#none">
+							<a href="page/list/songpa.html" target="_blank" title="새창열림">
 								<div class="imgArea">
 									<img src="include/image/portfolio/web_lib_15.jpg">
 								</div>
@@ -523,7 +529,7 @@
 								<p class="con">도서관 및 공공기관 프로젝트 구축, 리뉴얼, 솔루션 업데이트, 유지보수</p>
 							</div>
 							<div class="detail">
-								<p>성남시청, 국립중앙도서관, 성남시립도서관, 화성시립도서관, 동대문구립도서관, 중구구립도서관, 서대문구립도서관, 하상장애인복지관, 남양주시도서관</p>
+								<p>성남시청, 국립중앙도서관, 성남시립도서관, 화성시립도서관, 동대문구립도서관, 중구구립도서관, 서대문구립도서관, 하상장애인복지관, 남양주시도서관...</p>
 							</div>
 						</li>
 						<li>
@@ -534,7 +540,7 @@
 								<p class="con">자체 서비스 발굴 및 개발 / 대기업 온라인쇼핑몰 프로젝트 구축 대행</p>
 							</div>
 							<div class="detail">
-								<p>IDF MALL, 대현인사이드, 지오다노, 에스더포뮬러, 이현어패럴, 남유네, ANANTI, 용대황태푸드, 인동에프엔</p>
+								<p>IDF MALL, 대현인사이드, 지오다노, 에스더포뮬러, 이현어패럴, 남유네, ANANTI, 용대황태푸드, 인동에프엔...</p>
 							</div>
 						</li>
 						<li>
@@ -545,7 +551,7 @@
 								<p class="con">자사 쇼핑몰 관리 및 기업페이지 리뉴얼, 유지보수</p>
 							</div>
 							<div class="detail">
-								<p>디자인주식회사 홈페이지, 코끼리 STORE, 코끼리 SMART STORE, 코끼리 B2B, 코끼리 BOX, Dr.Bella </p>
+								<p>디자인주식회사 홈페이지, 코끼리 STORE, 코끼리 SMART STORE, 코끼리 B2B, 코끼리 BOX, Dr.Bella...</p>
 							</div>
 						</li>
 						<li>
@@ -556,7 +562,7 @@
 								<p class="con">사전등록페이지 및 홈페이지 제작, 웹디자인, 웹메일</p>
 							</div>
 							<div class="detail">
-								<p>SPOEX, In-cosmetics Korea, Semicon-korea, 베이비페어, NU-SKIN, K-fairs </p>
+								<p>SPOEX, In-cosmetics Korea, Semicon-korea, 베이비페어, NU-SKIN, K-fairs...</p>
 							</div>
 						</li>
 						<li>
@@ -603,6 +609,18 @@
 			prevEl: ".workSwiper .swiper-button-prev",
 		  },
 		autoplay : false,
+		breakpoints: {
+        
+          1024: {
+            slidesPerView: 2,  //브라우저가 1024보다 클 때
+			slidesPerGroup: 2,
+          },
+		  640: {
+            slidesPerView: 1.5,  //브라우저가 1024보다 클 때
+			slidesPerGroup: 1.5,
+			spaceBetween: 20,
+          },
+        },
 	});
 
 	var swiper = new Swiper(".skillSwiper", {
@@ -620,6 +638,18 @@
 			prevEl: ".workSwiper .swiper-button-prev",
 		  },
 		autoplay : false,
+		breakpoints: {
+        
+          1024: {
+            slidesPerView: 2,  //브라우저가 1024보다 클 때
+			slidesPerGroup: 2,
+          },
+		  640: {
+            slidesPerView: 1.5,  //브라우저가 1024보다 클 때
+			slidesPerGroup: 1.5,
+			spaceBetween: 20,
+          },
+        },
 	});
 
 	$(window).scroll(function() {
@@ -632,12 +662,15 @@
 		const section1Height = $(".section1").height() - 60;
 		const section2Height = $(".section2").height();
 		
-		if($(window).scrollTop() > section1Height) {
+		if($(window).scrollTop() > 1) {
 			$(".fix_bn").addClass("on");
 		} else {
 			$(".fix_bn").removeClass("on");
 		}
 	});
+
+
+
   </script>
 
 </html>

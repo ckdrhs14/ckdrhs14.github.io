@@ -63,10 +63,11 @@ header.fixed .menu {top:17px;}
 }
 
 
+#myCanvas {z-index:0; position:absolute; left:50%; bottom:0; top:0; margin-left:-50%; opacity:.3; max-width:1920px;}
 
 
 .section {position:relative; background: var(--main-bg-color); color: var(--main-font-color); min-height:800px; height:100vh; display:flex; align-items:center; justify-content:center; overflow:hidden;}
-.innerWrap {width:1200px; margin:0 auto;}
+.innerWrap {width:1200px; margin:0 auto; transition:all .5s;}
 .innerWrap .box {display:flex; position:relative;}
 .innerWrap {position:relative; overflow:hidden;}
 .innerWrap > .title {font-weight:700;}
@@ -83,15 +84,15 @@ header.fixed .menu {top:17px;}
 /* section1 */
 .section1 {width:100%; height:100vh; overflow:hidden; background-color:#000;}
 
-.objectArea {width:450px; height:450px; background:#000; border-radius:100%; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:100; opacity:1;  animation: blingbling 5s linear infinite}
+.objectArea {width:450px; height:450px; background:#000; border-radius:100%; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:100; opacity:1;  animation: blingbling 5s linear infinite; transition:all .5s;}
 .objectArea::before {display:block; content:''; width:100%; height:100%; background:#000; position:absolute; left:0; top:0; border-radius:100%; z-index:-1;}
 .objectArea img {width:100%; height:100%; opacity:.3; animation: rotate 240s linear .1s; filter:grayscale(1);}
-.videoBg {position:relative; width:100vw; height:100vh; opacity:.35;}
+.videoBg {position:relative; width:100vw; height:100vh; opacity:.2;}
+.videoBg2 {position:absolute; left:0; top:0; opacity:.3;}
 
-.slogan {width:100%; color:#fff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:1000; font-size:72px; line-height:1; font-weight:800; text-align:center;}
+.slogan {width:100%; color:#fff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:1000; font-size:4em; line-height:1; font-weight:800; text-align:center;}
 .slogan span {font-size:28px; font-weight:300; letter-spacing:.1em;}
 .slogan .typing {min-height:72px;}
-
 
 
 @keyframes rotate {
@@ -148,12 +149,13 @@ header.fixed .menu {top:17px;}
   width: 1px;
 }
 
-.fix_bn {position:absolute; top:0; overflow: hidden; width: 100%; height: 34px; border-bottom: 1px solid #000; font-size: 0; z-index:1000;}
+.fix_bn {position:absolute; top:0; overflow: hidden; width: 100%; height: 34px; border-bottom: 1px solid #000; font-size: 0; z-index:1000; transition:all .5s;}
 .fix_bn > div {overflow: hidden; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; background-color: #000; white-space: nowrap;}
 .fix_bn > div.right {right: 0; left: auto; background-color: #fff; clip-path: polygon(calc(50% + 20px) 0%, 100% 0%, 100% 100%, 50% 100%);}
 .fix_bn > div p { display: inline-block; vertical-align: middle; animation: marquee 40000ms linear infinite;}
 .fix_bn > div p span {display: inline-block; height: 34px; margin-left: 190px; color: #000; font-size: 17px; font-weight: 700; vertical-align: middle; line-height: 34px;}
 .fix_bn > div.left p span {color: #fff;}
+.fix_bn.on {top:-34px;}
 
 
 @keyframes marquee {
@@ -162,14 +164,15 @@ header.fixed .menu {top:17px;}
 }
 
 /* section2 */
+.section2 {background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 19%, rgba(14,14,14,1) 100%);}
 .section2 .innerWrap .box {margin-bottom:30px;}
-.section2 .innerWrap .imgArea {width:300px; height:auto; margin-right:50px; overflow:hidden;}
+.section2 .innerWrap .imgArea {width:300px; height:auto; margin-right:50px; overflow:hidden; transition:all .5s;}
 .section2 .innerWrap .imgArea img {filter:grayscale(.4);}
 .section2 .innerWrap .txtArea {font-weight:500;}
-.section2 .innerWrap .txtArea .title {position:relative; font-size:38px; font-weight:400; z-index:1;}
+.section2 .innerWrap .txtArea .title {position:relative; font-size:2.11em; font-weight:400; z-index:1;}
 .section2 .innerWrap .txtArea .title strong {font-weight:800;}
 .section2 .innerWrap .txtArea .title .highlight::before {content: ""; display:block; position: absolute; left: -2.5%;bottom: 0;width: 105%;height:15px;background-color: #9b815d; opacity:1; z-index:-1;}
-.section2 .innerWrap .txtArea .txt {position:relative; margin:15px 0; line-height:1.6; z-index:1;}
+.section2 .innerWrap .txtArea .txt {position:relative; margin:15px 0; line-height:1.6; z-index:1; word-break:keep-all;}
 .section2 .innerWrap .txtArea .txt span {font-size:1.1em; font-weight:600; margin-right:2px;}
 .section2 .btnGroup {margin-left:350px;}
 
@@ -272,7 +275,7 @@ header.fixed .menu {top:17px;}
 .section5 ul li + li {padding-top:10px; border-top:1px solid #555;}
 .section5 ul li div {display:flex; align-items:center; color:#fff; line-height:1.8; font-size:16px;}
 .section5 ul li div p {position:relative; font-size:16px; word-break:keep-all;}
-.section5 ul li div p::before {display:block; content:''; width:1px; height:14px; background-color:#000; position:absolute; left:-15px; top:50%; transform:translateY(-50%);}
+.section5 ul li div p::before {display:block; content:''; width:1px; height:14px; background-color:#fff; position:absolute; left:-15px; top:50%; transform:translateY(-50%);}
 .section5 ul li div.row > p {margin-right:30px; min-width:115px;}
 .section5 ul li div p b {color:#fff;}
 .section5 ul li div p.tit {position:relative; font-size:16px; color:#fff; font-weight:600; padding-left:28px; min-width:150px;}
@@ -289,3 +292,101 @@ header.fixed .menu {top:17px;}
 .section5 ul li .detail {visibility:hidden; opacity:0; background:#fff; padding:2px 15px; position:absolute; top:-40px; left:0; color:#000; font-size:14px; width:auto; max-width:100%; height:35px; border-radius:30px; transition:.1s ease-out; font-weight:600; text-align:center; border:1px solid #000;}
 .section5 ul li .detail::before {display:block; content:'';width: 0; height: 0; border-bottom: 10px solid transparent; border-top: 5px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent; position:absolute; bottom:-15px; left:65px;}
 .section5 ul li .detail p {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:14px;}
+
+
+@media screen and (max-width: 1400px){
+	header {height:70px;}
+	header .path .line {width:30px; height:2px;}
+
+	.objectArea {width:430px; height:430px;}
+	.slogan {font-size:3.6em;}
+
+	.innerWrap {width:1100px;}
+
+}
+
+@media screen and (max-width: 1200px){
+	.logo {left:40px;}
+	header .menu {right:40px;}
+	.overlay ul li a {font-size:3.6em;}
+
+	.section {padding:0 40px;}
+	.innerWrap {width:100%;}
+
+	.section5 ul li {padding:10px 15px;}
+	.section5 ul li div.row > p {margin-right:20px; overflow: hidden; white-space: normal; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: keep-all;}
+	.section5 ul li div.row > p.date {min-width:150px;}
+	.section5 ul li div p::before {left:-10px;}
+}
+
+@media screen and (max-width: 1024px){
+	header {height:60px;}
+	.logo {left:30px;}
+	header .menu {right:30px;}
+	.overlay .closeBtn {width:50px; height:50px; right:20px; top:12px;}
+	.overlay .closeBtn::before, .overlay .closeBtn::after {width:25px; margin-left:-13px; margin-top:-2px;}
+
+	.section:not(.section1) {height:100%; min-height:100%; padding:70px 30px;}
+	.innerWrap .box {flex-wrap:wrap; justify-content:center;}
+
+	.slogan {font-size:3em;}
+	
+	#myCanvas {display:none;}
+	.section2 .innerWrap .imgArea {margin:0 0 40px 0;}
+	.section2 .innerWrap .txtArea {text-align:center; width:100%;}
+
+	.section2 .btnGroup {margin:0 auto; text-align:center;}
+
+	.section5 ul li div {flex-wrap:wrap; width:100%;}
+	.section5 ul li div.row > p {min-width:auto;}
+	.section5 ul li div.row > p.con, .section5 ul li div.row > p.tit {width:100%;}
+	.section5 ul li div.row > p.tit {color:rgb(98 159 255); font-weight:700;}
+}
+
+@media screen and (max-width: 768px){
+	.logo a {font-size:26px;}
+	.fix_bn > div p span {font-size:16px;}
+	.overlay ul li + li {margin-top:24px;}
+	.overlay .closeBtn {width:45px; height:45px; right:20px; top:12px;}
+	.overlay .closeBtn::before, .overlay .closeBtn::after {width:25px; margin-left:-13px; margin-top:-2px;}
+
+
+	.objectArea {width:350px; height:350px;}
+	.slogan .typing {min-height:auto;}
+
+	.section1 {height:600px; min-height:100%;}
+	.section:not(.section1) {padding:50px 25px;}
+	.section2 .innerWrap .imgArea {margin:0 0 30px 0; width:240px;}
+
+	.innerWrap > .title p {font-size:60px;}
+}
+
+@media screen and (max-width: 640px){
+	.fix_bn > div p span {font-size:15px;}
+	.overlay ul li a {font-size:2.8em;}
+	.overlay ul li a::before {height:25px;}
+	.overlay ul li + li {margin-top:16px;}
+	
+
+	.section1 {height:450px;}
+	.objectArea {width:280px; height:280px;}
+	.slogan {font-size:2.8em;}
+
+	.section2 .innerWrap .imgArea {width:220px;}
+
+	.innerWrap > .title {height:auto; margin-bottom:25px;}
+	.innerWrap > .title p {font-size:42px;}
+
+	.section3 .innerWrap .txtArea .color p + p {margin-left:0;}
+
+	.section3, .section4 {padding-right:0 !important;}
+
+	.section3 .workSwiper,
+	.section4 .skillSwiper {margin:50px 0 20px 0;}
+	.section4 .innerWrap .row.f_start div img {margin-right:3px;}
+
+	.section5 ul li div p {font-size:14px;}
+	.section5 ul li div.row > p {margin-right:15px;}
+	.section5 ul li {padding:7px 15px;}
+
+}
