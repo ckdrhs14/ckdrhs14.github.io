@@ -84,7 +84,7 @@ header.fixed .menu {top:17px;}
 /* section1 */
 .section1 {width:100%; height:100vh; overflow:hidden; background-color:#000;}
 
-.objectArea {width:450px; height:450px; background:#000; border-radius:100%; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:100; opacity:1;  animation: blingbling 5s linear infinite; transition:all .5s;}
+.objectArea {width:450px; height:450px; background:#000; border-radius:100%; position:absolute; left:50%; top:calc(50% + 100px); transform:translate(-50%, -50%); z-index:100; opacity:1;  animation: blingbling 5s linear infinite; transition:width .5s, height .5s; opacity:0;}
 .objectArea::before {display:block; content:''; width:100%; height:100%; background:#000; position:absolute; left:0; top:0; border-radius:100%; z-index:-1;}
 .objectArea img {width:100%; height:100%; opacity:.3; animation: rotate 240s linear .1s; filter:grayscale(1);}
 .videoBg {position:relative; width:100vw; height:100vh; opacity:.2;}
@@ -93,6 +93,7 @@ header.fixed .menu {top:17px;}
 .slogan {width:100%; color:#fff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:1000; font-size:4em; line-height:1; font-weight:800; text-align:center;}
 .slogan span {font-size:28px; font-weight:300; letter-spacing:.1em;}
 .slogan .typing {min-height:72px;}
+.slogan .subtxt {font-size:.6em; position:absolute; left:50%; bottom:-120px; transform:translateX(-50%); width:100%; opacity:0;}
 
 
 @keyframes rotate {
@@ -149,13 +150,13 @@ header.fixed .menu {top:17px;}
   width: 1px;
 }
 
-.fix_bn {position:absolute; top:0; overflow: hidden; width: 100%; height: 34px; border-bottom: 1px solid #000; font-size: 0; z-index:1000; transition:all .5s;}
+.fix_bn {position:absolute; top:-34px; overflow: hidden; width: 100%; height: 34px; border-bottom: 1px solid #000; font-size: 0; z-index:1000; transition:all .5s;}
 .fix_bn > div {overflow: hidden; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; background-color: #000; white-space: nowrap;}
 .fix_bn > div.right {right: 0; left: auto; background-color: #fff; clip-path: polygon(calc(50% + 20px) 0%, 100% 0%, 100% 100%, 50% 100%);}
 .fix_bn > div p { display: inline-block; vertical-align: middle; animation: marquee 40000ms linear infinite;}
 .fix_bn > div p span {display: inline-block; height: 34px; margin-left: 190px; color: #000; font-size: 17px; font-weight: 700; vertical-align: middle; line-height: 34px;}
 .fix_bn > div.left p span {color: #fff;}
-.fix_bn.on {top:-34px;}
+.fix_bn.on {top:-68px;}
 
 
 @keyframes marquee {
@@ -165,6 +166,7 @@ header.fixed .menu {top:17px;}
 
 /* section2 */
 .section2 {background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 19%, rgba(14,14,14,1) 100%);}
+
 .section2 .innerWrap .box {margin-bottom:30px;}
 .section2 .innerWrap .imgArea {width:300px; height:auto; margin-right:50px; overflow:hidden; transition:all .5s;}
 .section2 .innerWrap .imgArea img {filter:grayscale(.4);}

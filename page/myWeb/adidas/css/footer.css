@@ -1,0 +1,29 @@
+/*footer*/
+
+.bg1 {height:70px; background:#000; margin-top:200px;}
+.foot_01 {padding:26px 0; box-sizing:border-box; font-size:14px; letter-spacing:1px; padding-left:50px;}
+.foot_01 ul{float:left;}
+.foot_01 li{display:inline-block; color:#fff; margin:0 5px;}
+.foot_01 a{color:#fff;}
+.icon div{float:right; opacity:.5; margin-top:-10px;}
+.icon div:hover {opacity:1;}
+
+.bg2 {height:160px; background:#191919;}
+.foot_02 {color:#706c6c; box-sizing:border-box; padding-left:50px;}
+.foot_02 h3 {font-size:20px; padding-top:20px; padding-bottom:10px; font-weight:100;}
+.foot_02 h2 {font-size:40px; letter-spacing:-1px; padding-bottom:10px;}
+.foot_02 p {font-size:12px;}
+.foot_02 p:nth-child(4) {padding-top:5px;}
+.foot_03 a {color:#706c6c;}
+.foot_03 ul{line-height:30px; font-size:13px;}
+.foot_03 ul:nth-child(1) {margin-left:700px; margin-top:-125px;}
+.foot_03 ul:nth-child(2) {margin-left:850px; margin-top:-120px;}
+
+
+.bg3 {height:110px; background:#1d1d1d;}
+.foot_04 p{width:690px; color:#706c6c; line-height:18px; font-size:12px;}
+.foot_04 {padding-left:100px; padding-top:20px;}
+
+
+
+.clearfix::after{content:''; display:block; clear:both;}

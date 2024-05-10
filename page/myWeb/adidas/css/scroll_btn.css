@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.top_bt, .bottom_bt {display:block; width:50px; height:50px; background:#000; color:#fff; text-align:center; line-height:50px; position:fixed; right:100px; bottom:10%; cursor:pointer;
+		font-size:14px; font-weight:bold; letter-spacing:1px; border-radius:5px 5px 5px 5px; z-index:200}
+.top_bt:hover{background:#2f94fb; color:#fff;}
+.bottom_bt:hover{background:#2f94fb; color:#fff;}
+.bottom_bt{position:fixed; right:100px; bottom:4%;}

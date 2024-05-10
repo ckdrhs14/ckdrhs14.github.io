@@ -3,6 +3,7 @@
 .sVisualWrap {position:relative; display:flex; align-items:center; justify-content:center; width:100%; height:300px; background:url("../image/skill_bg.jpg") 50% 50% no-repeat; margin-bottom:30px; filter:grayscale(1); color:#fff; background-size:cover;}
 .sVisualWrap.work {background-image:url("../image/work_bg.jpg");}
 .sVisualWrap.skill {background-image:url("../image/skill_bg.jpg");}
+.sVisualWrap.intro {background-image:url("../image/intro_bg.jpg"); background-position:0 95%}
 .sVisualWrap h3 {position:absolute; font-size:78px; font-weight:800; letter-spacing:-0.035em; transition:all .5s;}
 .sVisualWrap h3::before {display:block; content:''; width:80px; height:3px; background-color:#fff; position:absolute; bottom:0; left:50%; transform:translateX(-50%);}
 .sVisualWrap::before {display:block; content:''; width:100%; height:100%; background:rgba(0,0,0,.75); position:absolute; left:0; top:0;}
@@ -61,6 +62,60 @@
 
 .listWrap .videoBg {position:absolute; width:100vw; height:100%; opacity:.35; left:0; top:0;}
 .listWrap .videoBg video {width:100%; height:100%;}
+
+.introBg {position:fixed; bottom:-15px; width:100%; animation: marquee 52s linear infinite; display:flex; filter:grayscale(.6);}
+.introBg h3 {position:relative; width:100%; background-image: url("../image/timeline.jpg"); background-repeat: no-repeat; background-size: auto; background-position: 88% 72%; background-clip: text; -webkit-background-clip: text; color: transparent; font-weight:800; font-size:120px; text-align:right; line-height:1;}
+.introBg h3::before {display:block; content:"INTRODUCE"; width:100%; height:100%; text-shadow:8px 8px 0 rgba(50,50,50,1); position:absolute; left:0; top:0; z-index:-1;}
+.introBg h3 + h3 {margin-left:60px;}
+
+.introWrap .introbox {position:relative; height:240px; margin-bottom:70px;}
+.introWrap .introbox .me {position:relative; top:0; left:50%; transform:translateX(-50%); width:192px; height:240px; background:url("../image/3.png"); animation: cg 2s infinite; animation-timing-function:step-end; transition:all 1s; filter:grayscale(.4); margin-top:50px;}
+.introWrap .introbox .me::before {display:flex; justify-content:center; align-items:center; content:'🖐'; width:40px; height:40px; background:#ddd; position:relative; top:-60px; color:#000; border-radius:50%; margin:0 auto; animation: shaking 3s infinite; animation-timing-function:step-end;}
+
+
+@-webkit-keyframes cg {
+  0% {
+    background:url("../image/2.png");
+  }
+  15% {
+    background:url("../image/3.png");
+  }
+  30% {
+   background:url("../image/3.png");
+  }
+  70% {
+   background:url("../image/3.png");
+  }
+  85% {
+   background:url("../image/2.png");
+  }
+  100% {
+   background:url("../image/2.png");
+  }
+}
+
+@keyframes shaking {
+  0% {transform: translate(0, 0) rotate(0deg);}
+  5% {transform: translate(5px, 5px) rotate(5deg);}
+  10% {transform: translate(0, 0) rotate(0eg);}
+  15% {transform: translate(-5px, 5px) rotate(-5deg);}
+  20% {transform: translate(0, 0) rotate(0deg);}
+  25% {transform: translate(5px, 5px) rotate(5deg);}
+  30% {transform: translate(0, 0) rotate(0eg);}
+  35% {transform: translate(-5px, 5px) rotate(-5deg);}
+  40% {transform: translate(0, 0) rotate(0deg);}
+}
+
+.introWrap .introtext {text-align:center;}
+.introWrap .introtext .title {font-size:2.6em; font-weight:700; letter-spacing:.05em; line-height:1.4; margin-bottom:20px;}
+.introWrap .introtext p {font-size:1.5em;}
+
+.scrollBanner {position: relative; padding-bottom: 26.25%; margin-bottom:50px;}
+.scrollBanner__image {width: 100%; height: 100%;}
+.afterImage {position: absolute; overflow: hidden; top: 0; transform: translate(100%, 0px);}
+.afterImage img {transform: translate(-100%, 0px);}
+.scrollBanner__image img {width: 100%; height: 100%; position: absolute; top: 0;}
+
 
 
 @media screen and (max-width: 1400px){
