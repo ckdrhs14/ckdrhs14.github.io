@@ -161,3 +161,7 @@ img { -webkit-user-drag: none;
 	.btnGroup {margin:15px 0;}
 	.btn {padding:12px 45px;}
 }
+
+@media screen and (max-width: 500px){
+	.mobileHide4 {display:none !important;}
+}

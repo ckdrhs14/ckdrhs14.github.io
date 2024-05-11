@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="kr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>VUE.js</title>
+  <link rel="stylesheet" href="../../include/css/reset.css">
+  <link rel="stylesheet" href="../../include/css/default.css">
+  <link rel="stylesheet" href="../../include/css/style.css">
+  <link rel="stylesheet" href="../../include/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../../include/js/common.js"></script>
+  <script src="../../include/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+ </head>
+ <body>
+	<div id="example-1" class="box">
+		<h3 class="title">카운트버튼 만들기</h3>
+		<p>{{count}}</p>
+		<div class="btnGroup">
+			<button @click="countUp">COUNT UP</button>
+		</div>
+	</div>
+
+	<div id="example-2" class="box">
+		<h3 class="title">클릭하면 두번째는 못누르는 예제</h3>
+		<div class="btnGroup">
+			<button value="좋아" v-bind:disabled="isClick" @click="oneClick">가입할래?</button>
+		</div>
+	</div>
+
+	<div id="example-3" class="box">
+		<h3 class="title">카운트버튼 여러조건 만들기</h3>
+		<p>{{count}}</p>
+		<div class="btnGroup">
+			<button @click="countUp(3)">3씩 증가</button>
+			<button @click="countUp(10)">10씩 증가</button>
+			<button @click="countUp(100)">100씩 증가</button>
+		</div>
+	</div>
+
+	<div id="example-4" class="box">
+		<h3 class="title">특정 키를 눌렀을 때 메소드 실행</h3>
+		<p>{{myText}}</p>
+		<input v-model="myText" v-on:keyup.shift="showAlert">
+	</div>
+
+	<div id="example-5" class="box">
+		<h3 class="title">특정 키를 눌렀을 때 메소드 문제</h3>
+		<p>{{myText}}</p>
+		<input v-model="myText" v-on:keyup.enter="show">
+	</div>
+
+	<div id="example-6" class="box">
+		<h3 class="title">계산기 만들기 문제</h3>
+
+		<input v-model.number="firstNum">
+		<input v-model.number="secondNum">
+		
+		<div class="btnGroup">
+			<button @click="add(firstNum, secondNum)">덧셈계산</button>
+			<button @click="min(firstNum, secondNum)">뺄셈계산</button>
+			<button @click="mul(firstNum, secondNum)">곱셈계산</button>
+			<button @click="div(firstNum, secondNum)">나눗셈계산</button>
+		</div>
+
+		<p style="margin-top:10px;">{{result}}</p>
+	</div>
+
+	<script>
+
+	 new Vue({
+		 el: "#example-1",
+		 data:{
+			 count:0
+		 },
+		 methods:{
+			 countUp: function(){
+				 this.count++;
+			 }
+		 }
+	 })
+
+	 function good(){
+		alert("탈퇴 못해~");
+	 }
+
+	 new Vue({
+		 el: "#example-2",
+		 data:{
+			 isClick: false
+		 },
+		 methods:{
+			 oneClick: function(){
+				this.isClick = true;
+				good();
+			 }
+		 }
+	 })
+
+	 new Vue({
+		 el: "#example-3",
+		 data:{
+			 count:0
+		 },
+		 methods:{
+			 countUp: function(value){
+				this.count += value;
+			 }
+		 }
+	 })
+
+	 new Vue({
+		 el: "#example-4",
+		 data:{
+			 myText: ""
+		 },
+		 methods:{
+			 showAlert: function(){
+				alert("엔터키를 눌렀습니다.")
+			 }
+		 }
+	 })
+
+	 new Vue({
+		 el: "#example-5",
+		 data:{
+			 myText: ""
+		 },
+		 methods:{
+			 show: function(){
+				alert("show 메소드 실행")
+			 }
+		 }
+	 })
+
+	 new Vue({
+		 el: "#example-6",
+		 data:{
+			 firstNum: 0,
+			 secondNum: 0,
+			 result: 0
+		 },
+		 methods:{
+			 add : function(fNum, sNum){
+				this.result = fNum + sNum;
+			 },
+			 min : function(fNum, sNum){
+				this.result = fNum - sNum;
+			 },
+			 mul : function(fNum, sNum){
+				this.result = fNum * sNum;
+			 },
+			 div : function(fNum, sNum){
+				this.result = fNum / sNum;
+			 },
+		 }
+	 })
+	 </script>
+
+ </body>
+</html>

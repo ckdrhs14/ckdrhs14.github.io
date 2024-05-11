@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="kr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>VUE.js</title>
+  <link rel="stylesheet" href="../../include/css/reset.css">
+  <link rel="stylesheet" href="../../include/css/default.css">
+  <link rel="stylesheet" href="../../include/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="include/js/common.js"></script>
+ </head>
+ <body>
+	<div id="example-1" class="box">
+		<h3 class="title">이미지 지정</h3>
+		<img src="../../include/images/example1.PNG" width="163px">직접지정</img>
+		<img v-bind:src="fileName" width="163px">v-bind로 지정</img>
+		<img :src="fileName" width="163px">v-bind 생략</img>
+		<a :href="url">URL 지정</a>
+		<p :style="{color:myColor}">테마컬러</p>
+		<p :class="bgClass, bdClass">클래스 지정</p>
+		<p :class="[bgClass, bdClass]">클래스 지정</p>
+		<p :class="{'gray':isOn}">클래스 지정</p>
+	</div>
+
+	<script>
+
+	var example1 = new Vue({
+		el:"#example-1",
+		data:{
+			fileName:'../../include/images/example1.PNG',
+			url:'https://www.naver.com',
+			myColor:'rgb(10,205,206)',
+			bgClass : 'gray',
+			bdClass : 'bdType1',
+			isOn : true,
+		}
+	})
+	</script>
+ </body>
+</html>

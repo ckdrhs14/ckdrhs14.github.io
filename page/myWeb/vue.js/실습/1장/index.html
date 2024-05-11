@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="kr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>VUE.js</title>
+  <link rel="stylesheet" href="../../include/css/reset.css">
+  <link rel="stylesheet" href="../../include/css/default.css">
+  <link rel="stylesheet" href="../../include/css/style.css">
+  <link rel="stylesheet" href="../../include/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../../include/js/common.js"></script>
+  <script src="../../include/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+ </head>
+ <body>
+	<div id="count" class="box">
+		<h3 class="title">카운트버튼 만들기</h3>
+		<p>{{count}}회</p>
+		<div class="btnGroup">
+			<button v-on:click="countUp">COUNT UP</button>
+			<button v-on:click="countDown">COUNT DOWN</button>
+		</div>
+	</div>
+
+	<script>
+
+	 new Vue({
+		 el: "#count",
+		 data:{
+			 count:0
+		 },
+		 methods:{
+			 countUp: function(){
+				 this.count++;
+			 },
+			 countDown: function(){
+				 this.count--;
+			 }
+		 }
+	 })
+	 </script>
+
+ </body>
+</html>
