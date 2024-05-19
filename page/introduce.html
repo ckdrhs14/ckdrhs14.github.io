@@ -72,21 +72,12 @@
 
 				<div class="introtext">
 					<h3 class="title">ONLY THOSE WHO WILL RISK GOING TOO FAR CAN POSSIBLY FIND OUT HOW FAR ONE CAN GO.</h3>
-					<p>백문이 불여일견이라 경험 해본 사람은 훨씬 더 높은 안목을 가집니다.<br>
+					<p>백문이 불여일견이라 경험 해본 사람은 훨씬 더 높은 안목을 가집니다.<br class="mobileHide3">
 					위험을 감수하는 사람은 더 높은 경험을 쌓습니다.<br>
 					저의 도전적이고 호기심 많은 성향은 저에게 경험을 주었고 제 인생에 많은 도움을 주었던 것 같습니다.<br>
 					사람을 대할 때 임기응변이 늘었고 정답은 없지만 무엇이 나은 방향인지 제시해줍니다.<br>
 					만나는 모든 사람들에게 감사하며 항상 노력하여 좋은 경험으로 기억 될 수 있도록 가꾸겠습니다.</p>
 				</div>
-
-				<ul class="skillList">
-					<li>
-						<h3>자격증</h3>
-						<p>- 웹디자인기능사</p>
-					</li>
-				</ul>
-
-				
 			</div>
 		</div>
 
@@ -100,18 +91,113 @@
 		</div>
 
 		<div class="contentWrap">
-			<ul class="skillList">
-				<li>
-					<h3>자격증</h3>
-					<p>- 웹디자인기능사</p>
-				</li>
-			</ul>
+			<div class="skillList">
+				<h3 class="title">LICENSE</h3>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="box dsh">
+							<div class="topArea">
+								<p>국가기술자격증</p>
+								<p class="tit">워드프로세서</p>
+								<p>대한상공회의소</p>
+							</div>
+							<div class="bottomArea">
+								<p><span>이름</span>이창곤</p>
+								<p><span>직무</span>사무</p>
+								<p><span>합격</span>2017.08.18</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box dsh">
+							<div class="topArea">
+								<p>국가기술자격증</p>
+								<p class="tit">컴퓨터활용능력 2급</p>
+								<p>대한상공회의소</p>
+							</div>
+							<div class="bottomArea">
+								<p><span>이름</span>이창곤</p>
+								<p><span>직무</span>사무</p>
+								<p><span>합격</span>2017.12.15</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box hrdk">
+							<div class="topArea">
+								<p>국가기술자격증</p>
+								<p class="tit">웹디자인기능사</p>
+								<p>한국산업인력공단</p>
+							</div>
+							<div class="bottomArea">
+								<p><span>이름</span>이창곤</p>
+								<p><span>직무</span>디자인</p>
+								<p><span>합격</span>2018.06.15</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box hrdk">
+							<div class="topArea">
+								<p>국가기술자격증</p>
+								<p class="tit">양식조리기능사</p>
+								<p>한국산업인력공단</p>
+							</div>
+							<div class="bottomArea">
+								<p><span>이름</span>이창곤</p>
+								<p><span>직무</span>조리</p>
+								<p><span>합격</span>2011.06.03</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box kpc">
+							<div class="topArea">
+								<p>국가기술자격증</p>
+								<p class="tit">GTQ 1급</p>
+								<p>한국생산성본부</p>
+							</div>
+							<div class="bottomArea">
+								<p><span>이름</span>이창곤</p>
+								<p><span>직무</span>정보통신</p>
+								<p><span>합격</span>2017.12.15</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		
 	</div>
 
 </body>
-  
+
+<script>
+var swiper = new Swiper(".skillList", {
+	slidesPerView: 5,
+	slidesPerGroup: 5,
+	spaceBetween: 15,
+	loop: false,
+	speed : 800,
+	autoplay : false,
+	breakpoints: {
+	
+	  1200: {
+		slidesPerView: 4,  //브라우저가 1200보다 클 때
+		slidesPerGroup: 4,
+	  },
+	  1024: {
+		slidesPerView: 3,  //브라우저가 1024보다 클 때
+		slidesPerGroup: 3,
+		spaceBetween: 15,
+	  },
+	  640: {
+		slidesPerView: 1.8,  //브라우저가 768보다 클 때
+		slidesPerGroup: 1.8,
+	  },
+	},
+});
+</script>
 
 </html>

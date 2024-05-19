@@ -283,7 +283,7 @@ header.fixed .menu {top:17px;}
 .section5 ul li div p.tit {position:relative; font-size:16px; color:#fff; font-weight:600; padding-left:28px; min-width:150px;}
 .section5 ul li div p.tit::before {display:block; content:''; width:20px; height:20px; position:absolute; left:0; top:50%; transform:translateY(-50%);}
 .section5 ul li div p.tit.jnet::before {background:url("../image/main/ico_jnet.png");}
-.section5 ul li div p.tit.wisa::before {background:url("../image/main/ico_wisa.png");}
+.section5 ul li div p.tit.wisa::before {background:url("../image/main/ico_wisa.png?ver=240519");}
 .section5 ul li div p.tit.design::before {background:url("../image/main/ico_design.png");}
 .section5 ul li div p.tit.eims::before {background:url("../image/main/ico_eims.png");}
 .section5 ul li div p.tit.sisoft::before {background:url("../image/main/ico_sisoft.png");}
@@ -365,7 +365,7 @@ header.fixed .menu {top:17px;}
 @media screen and (max-width: 640px){
 	.fix_bn > div p span {font-size:15px;}
 	.overlay ul li a {font-size:2.8em;}
-	.overlay ul li a::before {height:25px;}
+	.overlay ul li a::before {height:17px;}
 	.overlay ul li + li {margin-top:16px;}
 	
 
@@ -387,15 +387,18 @@ header.fixed .menu {top:17px;}
 
 	.section5 ul li div p {font-size:14px;}
 	.section5 ul li div.row > p {margin-right:15px;}
-	.section5 ul li {padding:7px 15px;}
+	.section5 ul li {padding:7px 7px;}
 
 }
 
 
 @media screen and (max-width: 500px){
+	.logo {left:25px;}
 	.objectArea {width:200px; height:200px;}
 	.slogan .subtxt {bottom:-85px;}
 
 	.overlay ul li a {font-size:2em;}
 	.overlay ul li + li {margin-top:10px;}
+
+	.section1 {min-height:0; height:100%;}
 }

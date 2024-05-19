@@ -4,7 +4,7 @@
 .sVisualWrap.work {background-image:url("../image/work_bg.jpg");}
 .sVisualWrap.skill {background-image:url("../image/skill_bg.jpg");}
 .sVisualWrap.intro {background-image:url("../image/intro_bg.jpg"); background-position:0 95%}
-.sVisualWrap h3 {position:absolute; font-size:78px; font-weight:800; letter-spacing:-0.035em; transition:all .5s;}
+.sVisualWrap h3 {position:absolute; font-size:78px; font-weight:800; letter-spacing:-0.035em; transition:all .5s; text-align:center;}
 .sVisualWrap h3::before {display:block; content:''; width:80px; height:3px; background-color:#fff; position:absolute; bottom:0; left:50%; transform:translateX(-50%);}
 .sVisualWrap::before {display:block; content:''; width:100%; height:100%; background:rgba(0,0,0,.75); position:absolute; left:0; top:0;}
 
@@ -73,6 +73,22 @@
 .introWrap .introbox .me {position:relative; top:0; left:50%; transform:translateX(-50%); width:192px; height:240px; background:url("../image/3.png"); animation: cg 2s infinite; animation-timing-function:step-end; transition:all 1s; filter:grayscale(.4); margin-top:50px;}
 .introWrap .introbox .me::before {display:flex; justify-content:center; align-items:center; content:'🖐'; width:40px; height:40px; background:#ddd; position:relative; top:-60px; color:#000; border-radius:50%; margin:0 auto; animation: shaking 3s infinite; animation-timing-function:step-end;}
 
+.skillList {overflow:hidden;}
+.skillList .title {font-size:3.4em; text-align:center; font-weight:800; margin-bottom:50px;}
+.skillList .swiper-wrapper .box {border-radius:15px; background-color:#fff; overflow:hidden;}
+.skillList .swiper-wrapper .box div {padding:25px 20px;}
+.skillList .swiper-wrapper .box .topArea {padding:30px 20px;}
+.skillList .swiper-wrapper .box.dsh .topArea {background:linear-gradient(110deg,#00a3d4 50%,#00c3ff 99%);}
+.skillList .swiper-wrapper .box.hrdk .topArea {background:linear-gradient(109deg,#276ff9 50%,#5992ff 99%);}
+.skillList .swiper-wrapper .box.kpc .topArea {background:linear-gradient(116deg,#ef405a 46%,#f95e75 103%);}
+.skillList .swiper-wrapper .box .topArea .tit {font-size:1.1em; font-weight:700; margin-bottom:50px;}
+.skillList .swiper-wrapper .box .topArea p:not(.tit) {font-size:.8em;}
+.skillList .swiper-wrapper .box .topArea p:last-child {opacity:.7;}
+.skillList .swiper-wrapper .box .bottomArea {position:relative; color:#000;}
+.skillList .swiper-wrapper .box .bottomArea p {font-size:.8em;}
+.skillList .swiper-wrapper .box .bottomArea p + p {margin-top:3px;}
+.skillList .swiper-wrapper .box .bottomArea p span {min-width:45px; display:inline-block; font-weight:600;}
+
 
 @-webkit-keyframes cg {
   0% {
@@ -108,8 +124,8 @@
 }
 
 .introWrap .introtext {text-align:center;}
-.introWrap .introtext .title {font-size:2.6em; font-weight:700; letter-spacing:.05em; line-height:1.4; margin-bottom:20px;}
-.introWrap .introtext p {font-size:1.5em;}
+.introWrap .introtext .title {font-size:2.6em; font-weight:800; letter-spacing:.05em; line-height:1.4; margin-bottom:20px; word-break:keep-all;}
+.introWrap .introtext p {font-size:1.5em; word-break:keep-all;}
 
 .scrollBanner {position: relative; padding-bottom: 26.25%; margin-bottom:50px;}
 .scrollBanner__image {width: 100%; height: 100%;}
@@ -134,6 +150,7 @@
 @media screen and (max-width: 1024px){
 	.container {margin-top:60px;}
 	.contentWrap {padding:50px 30px 50px 30px;}
+	.sVisualWrap {margin-bottom:0;}
 	.sVisualWrap h3 {font-size:3.6em;}
 	.tab {overflow:visible; margin-bottom:30px;}
 	.tab div, 
@@ -151,6 +168,8 @@
 	.list .titleWrap .title {font-size:2em;}
 	.list .infoArea {margin-top:40px; margin-bottom:60px;}
 	.list .infoArea li .title {font-size:1.4em;}
+
+	.introWrap .introbox {display:none;}
 }
 
 @media screen and (max-width: 768px){
@@ -165,8 +184,10 @@
 
 @media screen and (max-width: 640px){
 
-	.sVisualWrap h3 {font-size:2.4em;} 
-	.tab div a {padding:0 10px; line-height:normal; display:flex; justify-content:center; align-items:center; word-break:keep-all;}
+	.sVisualWrap {height:200px;}
+	.sVisualWrap h3 {font-size:2.4em;}
+	.tab div a {padding:0 10px; height:45px; line-height:normal; display:flex; justify-content:center; align-items:center; word-break:keep-all; font-size:1em;}
+	.glider {height:45px;}
 
 	.pjList.col3 {border-top:1px solid #555;}
 	.pjList.col3 li {width:100%; margin:0;}
@@ -185,4 +206,7 @@
 	.pjList li.pc_etc .txtArea .row.f_start {justify-content:center;}
 	.pjList li.pc_design .txtArea .row.f_start div,
 	.pjList li.pc_etc .txtArea .row.f_start div {width:auto;}
+
+	.introWrap .introtext .title {font-size:1.8em;}
+	.introWrap .introtext p {font-size:1.2em;}
 }
