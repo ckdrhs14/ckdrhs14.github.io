@@ -111,9 +111,9 @@ $(function(){
 
 $(window).scroll(function() {
 	if($(window).scrollTop() > 1) {
-		$('header').addClass("on");
+		$('header, .topBtn').addClass("on");
 	} else {
-		$('header').removeClass("on");
+		$('header, .topBtn').removeClass("on");
 	}
 
 	const section1Height = $(".section1").height() - 60;
@@ -243,5 +243,12 @@ $(function(){
 	  duration: 10,
 	  stagger: 10,
 	  ease: 'expo'
+	});
+});
+
+$(function(){
+	$("body").append('<div class="topBtn"></div>');
+	$(".topBtn").on("click",function(){
+		$("html").animate({scrollTop : 0}, 200);
 	});
 });

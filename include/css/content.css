@@ -73,8 +73,8 @@
 .introWrap .introbox .me {position:relative; top:0; left:50%; transform:translateX(-50%); width:192px; height:240px; background:url("../image/3.png"); animation: cg 2s infinite; animation-timing-function:step-end; transition:all 1s; filter:grayscale(.4); margin-top:50px;}
 .introWrap .introbox .me::before {display:flex; justify-content:center; align-items:center; content:'🖐'; width:40px; height:40px; background:#ddd; position:relative; top:-60px; color:#000; border-radius:50%; margin:0 auto; animation: shaking 3s infinite; animation-timing-function:step-end;}
 
-.skillList {overflow:hidden;}
-.skillList .title {font-size:3.4em; text-align:center; font-weight:800; margin-bottom:50px;}
+.skillList {overflow:hidden; padding-bottom:100px;}
+.skillList .title {font-size:3.4em; font-weight:800; margin-bottom:50px; letter-spacing:-0.1em;}
 .skillList .swiper-wrapper .box {border-radius:15px; background-color:#fff; overflow:hidden;}
 .skillList .swiper-wrapper .box div {padding:25px 20px;}
 .skillList .swiper-wrapper .box .topArea {padding:30px 20px;}
@@ -88,6 +88,33 @@
 .skillList .swiper-wrapper .box .bottomArea p {font-size:.8em;}
 .skillList .swiper-wrapper .box .bottomArea p + p {margin-top:3px;}
 .skillList .swiper-wrapper .box .bottomArea p span {min-width:45px; display:inline-block; font-weight:600;}
+
+.contactArea .title {font-size:3.4em; font-weight:800; letter-spacing:-0.1em;}
+.contactArea .btnGroup {display:flex;}
+.contactArea .btnGroup a {width:100%; display:flex; align-items:center; justify-content:center;}
+.contactArea .btnGroup a + a {margin-left:30px;}
+.contactArea .btnGroup a img {width:28px; margin-right:10px;}
+
+.bounce span {display:inline-block; animation: bounce 1.5s infinite;}
+.bounce span:nth-child(1) {animation-delay: .1s}
+.bounce span:nth-child(2) {animation-delay: .2s}
+.bounce span:nth-child(3) {animation-delay: .3s}
+.bounce span:nth-child(4) {animation-delay: .4s}
+.bounce span:nth-child(5) {animation-delay: .5s}
+.bounce span:nth-child(6) {animation-delay: .6s}
+.bounce span:nth-child(7) {animation-delay: .7s}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+	100%{
+        transform: translateY(0);
+    }
+}
 
 
 @-webkit-keyframes cg {
@@ -170,6 +197,8 @@
 	.list .infoArea li .title {font-size:1.4em;}
 
 	.introWrap .introbox {display:none;}
+
+	.contactArea .btnGroup a + a {margin-left:15px;}
 }
 
 @media screen and (max-width: 768px){
@@ -180,6 +209,10 @@
 
 	.pjList li .txtArea p b {min-width:65px; margin-right:8px; font-size:13px; height:20px; line-height:20px;}
 	.pjList li .txtArea .color p {margin-right:8px;}
+
+	.skillList .title {margin-bottom:10px;}
+	.contactArea .btnGroup {flex-wrap:wrap;}
+	.contactArea .btnGroup a + a {margin-left:0; margin-top:15px;}
 }
 
 @media screen and (max-width: 640px){

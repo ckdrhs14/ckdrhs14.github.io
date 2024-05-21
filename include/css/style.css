@@ -35,6 +35,10 @@ header.fixed .menu {top:17px;}
 .overlay .closeBtn::before {transform: rotate(-45deg);}
 .overlay .closeBtn::after {transform: rotate(45deg);}
 
+.topBtn {display:flex; align-items:center; justify-content:center; width:50px; height:50px; background-color:rgba(51,51,51,.8); color:#fff; position:fixed; right:50px; bottom:50px; cursor:pointer; opacity:0; transition:all .5s;}
+.topBtn::before {display:block; content:''; width:24px; height:13px; background:url("../image/button/topBtn.png") 0 0 no-repeat; background-size:contain;}
+.topBtn.on {opacity:1;}
+
 @keyframes menu-animation {
   0% {
 	opacity:0;
@@ -283,7 +287,7 @@ header.fixed .menu {top:17px;}
 .section5 ul li div p.tit {position:relative; font-size:16px; color:#fff; font-weight:600; padding-left:28px; min-width:150px;}
 .section5 ul li div p.tit::before {display:block; content:''; width:20px; height:20px; position:absolute; left:0; top:50%; transform:translateY(-50%);}
 .section5 ul li div p.tit.jnet::before {background:url("../image/main/ico_jnet.png");}
-.section5 ul li div p.tit.wisa::before {background:url("../image/main/ico_wisa.png?ver=240519");}
+.section5 ul li div p.tit.wisa::before {background:url("../image/main/ico_wisa2.png");}
 .section5 ul li div p.tit.design::before {background:url("../image/main/ico_design.png");}
 .section5 ul li div p.tit.eims::before {background:url("../image/main/ico_eims.png");}
 .section5 ul li div p.tit.sisoft::before {background:url("../image/main/ico_sisoft.png");}
@@ -294,6 +298,10 @@ header.fixed .menu {top:17px;}
 .section5 ul li .detail {visibility:hidden; opacity:0; background:#fff; padding:2px 15px; position:absolute; top:-40px; left:0; color:#000; font-size:14px; width:auto; max-width:100%; height:35px; border-radius:30px; transition:.1s ease-out; font-weight:600; text-align:center; border:1px solid #000;}
 .section5 ul li .detail::before {display:block; content:'';width: 0; height: 0; border-bottom: 10px solid transparent; border-top: 5px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent; position:absolute; bottom:-15px; left:65px;}
 .section5 ul li .detail p {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:14px;}
+
+.footer {width:100%; padding:40px 30px; background:#000; font-size:14px; display:flex; flex-wrap:wrap; justify-content:center; border-top:1px solid #333;}
+.footer p {width:100%; text-align:center; color:#ddd; font-weight:600; word-break:keep-all;}
+.footer p:last-child {color:#777;}
 
 
 @media screen and (max-width: 1400px){
@@ -311,6 +319,8 @@ header.fixed .menu {top:17px;}
 	.logo {left:40px;}
 	header .menu {right:40px;}
 	.overlay ul li a {font-size:3.6em;}
+
+	.topBtn {bottom:30px; right:30px;}
 
 	.section {padding:0 40px;}
 	.innerWrap {width:100%;}
@@ -351,6 +361,8 @@ header.fixed .menu {top:17px;}
 	.overlay ul li + li {margin-top:24px;}
 	.overlay .closeBtn {width:45px; height:45px; right:20px; top:12px;}
 	.overlay .closeBtn::before, .overlay .closeBtn::after {width:25px; margin-left:-13px; margin-top:-2px;}
+	.topBtn {width:36px; height:36px; bottom:20px; right:20px;}
+	.topBtn::before {width:16px; height:9px;}
 
 
 	.objectArea {width:350px; height:350px;}
