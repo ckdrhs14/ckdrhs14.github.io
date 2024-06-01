@@ -86,7 +86,7 @@ input[type="checkbox"], input[type="radio"] {padding: 0; border-radius: 0;}
 input[type="checkbox"][disabled], input[type="radio"][disabled] {opacity: .5;}
 input[type="image"] {border: 0 none;}
 input[type="text"],img,select {font-size: 1em; vertical-align: middle;}
-select {height: 50px; padding-right: 30px; padding-left: 20px; border: 1px solid #e2e2e2; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #fff url("/include/image/common/arr_select.png") 100% 50% no-repeat; color: #555;border-radius:3px;}
+select {height: 50px; padding-right: 30px; padding-left: 20px; border: 1px solid #e2e2e2; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; color: #555;border-radius:3px;}
 select::-ms-expand {display: none;}
 button,input[type="button"], input[type="reset"], input[type="submit"] {overflow: visible; -webkit-appearance: button; cursor: pointer;}
 button {border: 0; background-color: transparent;}

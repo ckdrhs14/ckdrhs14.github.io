@@ -45,8 +45,7 @@
 		 url('../font/S-CoreDream-5Medium.woff') format('woff'); /* Modern Browsers */
 }
 
-html {curs1or:none;}
-body {font-family: 'S-CoreDream', sans-serif; font-size:16px; font-weight:400; box-sizing:border-box; background-image: url("../images/main_bg_01.jpg"); background-repeat:no-repeat; background-size: cover; background-attachment: fixed; color:#333;}
+body {font-family: 'S-CoreDream', sans-serif; font-size:16px; font-weight:400; box-sizing:border-box; background-attachment: fixed; color:#333;}
 em {font-style:normal;}
 div {z-index:0;}
 img {height:auto;}

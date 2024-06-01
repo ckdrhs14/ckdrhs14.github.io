@@ -15,16 +15,17 @@
 	<meta name="Author" content="">
 	<meta name="Keywords" content="">
 	<meta name="Description" content="">
-	<link rel="stylesheet" href="include/css/swiper.min.css">
-	<link href="include/css/default.css" rel="stylesheet">
-	<link href="include/css/style.css" rel="stylesheet">
+	<link href="./include/css/default.css" rel="stylesheet">
+	<link href="./include/css/style.css" rel="stylesheet">
+	<link href="./include/css/main.scss" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="include/js/swiper.min.js"></script>
-    <script src="include/js/cursor.js"></script>
+    <script src="./include/js/cursor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<title>LEE.c.g</title>
 </head>
 
@@ -35,14 +36,14 @@
 		<circle class="drawing_line_circle" cx="0" cy="0" r="8"></circle>
 		<polyline class="drawing_line_polyline" points=""></polyline>
 	  </svg>
-	</div> 
+	</div>
 
 	<div class="overlay">
 		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="page/work_portfolio.html">WORK PORTFOLIO</a></li>
-			<li><a href="page/skill_portfolio.html">SKILL PORTFOLIO</a></li>
-			<li><a href="page/introduce.html">INTRODUCE</a></li>
+			<li><a href="/">HOME</a></li>
+			<li><a href="./page/work_portfolio.html">WORK PORTFOLIO</a></li>
+			<li><a href="./page/skill_portfolio.html">SKILL PORTFOLIO</a></li>
+			<li><a href="./page/introduce.html">INTRODUCE</a></li>
 		</ul>
 		<a href="javascript:void(0);" class="closeBtn" style="opacity: 1;">창 닫기</a>
 	</div>
@@ -703,7 +704,7 @@
 	</div>
 </body>
 
-<script src="include/js/script.js"></script>
+<script src="./include/js/script.js"></script>
 <script>
 
     var swiper = new Swiper(".workSwiper", {
@@ -724,8 +725,8 @@
 		breakpoints: {
         
           1024: {
-            slidesPerView: 2,  //브라우저가 1024보다 클 때
-			slidesPerGroup: 2,
+            slidesPerView: 3,  //브라우저가 1024보다 클 때
+			slidesPerGroup: 3,
           },
 		  640: {
             slidesPerView: 1.2,  //브라우저가 1024보다 클 때
@@ -753,8 +754,8 @@
 		breakpoints: {
         
           1024: {
-            slidesPerView: 2,  //브라우저가 1024보다 클 때
-			slidesPerGroup: 2,
+            slidesPerView: 3,  //브라우저가 1024보다 클 때
+			slidesPerGroup: 3,
           },
 		  640: {
             slidesPerView: 1.2,  //브라우저가 1024보다 클 때

@@ -6,7 +6,6 @@
 		<meta name="Author" content="">
 		<meta name="Keywords" content="">
 		<meta name="Description" content="">
-		<link href="css/style.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -73,7 +72,7 @@
 				var idx = generateRandom(0,23-i);
 				var img = cards.splice(idx,1);
 
-				cardTableCode += "<td id="card"+i+""><img src="images/"+img+""><span>?</span></td>";
+				cardTableCode += '<td id="card"+i+""><img src="images/"+img+""><span>?</span></td>';
 			}
 			cardTableCode += "</tr>";
 			$("#cardTable").html(cardTableCode);

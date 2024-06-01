@@ -114,7 +114,7 @@ header.fixed .menu {top:17px;}
 }
 
 @keyframes blingbling {
-  0 {
+  0% {
     filter:saturate(100%);
   }
   80% {
