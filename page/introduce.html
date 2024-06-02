@@ -209,7 +209,7 @@
 <script>
 var swiper = new Swiper(".skillList", {
 	slidesPerView: 1.8,
-	slidesPerGroup: 1.8,
+	slidesPerGroupAuto: true,
 	spaceBetween: 15,
 	loop: false,
 	speed : 800,
@@ -218,16 +218,13 @@ var swiper = new Swiper(".skillList", {
 	
 	  1200: {
 		slidesPerView: 5,  //브라우저가 1200보다 클 때
-		slidesPerGroup: 5,
 	  },
 	  1024: {
 		slidesPerView: 4,  //브라우저가 1024보다 클 때
-		slidesPerGroup: 4,
 		spaceBetween: 15,
 	  },
 	  640: {
 		slidesPerView: 2.5,  //브라우저가 768보다 클 때
-		slidesPerGroup: 2.5,
 	  },
 	},
 });
