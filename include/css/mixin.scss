@@ -1,0 +1,68 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+$translate: translateY(-50%);
+
+@mixin translate($translate: -50%) {
+    -webkit-transform: translate($translate, $translate);
+    -ms-transform: translate($translate, $translate);
+    -o-transform: translate($translate, $translate);
+    transform: translate($translate, $translate);
+}
+
+@mixin translateX($translate: -50%) {
+    -webkit-transform: translateX($translate);
+    -ms-transform: translateX($translate);
+    -o-transform: translateX($translate);
+    transform: translateX($translate);
+}
+
+@mixin translateY($translate: -50%) {
+    -webkit-transform: translateY($translate);
+    -ms-transform: translateY($translate);
+    -o-transform: translateY($translate);
+    transform: translateY($translate);
+}
+
+@mixin transition($transition: .5s) {
+    -ms-transition: all $transition ease-in-out;
+    -moz-transition: all $transition ease-in-out;
+    -o-transition: all $transition ease-in-out;
+    -webkit-transition : all $transition ease-in-out;
+    transition: all $transition ease-in-out;
+}
+
+@mixin text-overflow {
+    display:block;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+$full : 100%;
+$zero : 0;

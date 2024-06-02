@@ -1,6 +1,10 @@
 header {
   position: fixed;
   top: 0;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   width: 100%;
   height: 80px;
@@ -17,9 +21,16 @@ header .menu {
   position: absolute;
   top: 50%;
   right: 50px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
   mix-blend-mode: difference;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 header .path .line {
@@ -28,6 +39,10 @@ header .path .line {
   background-color: #ecf0f1;
   display: block;
   margin: 8px auto;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 header .path .line:hover {
@@ -35,10 +50,16 @@ header .path .line:hover {
 }
 header .path.is-active .line:nth-child(1) {
   opacity: 0;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 header .path.is-active .line:nth-child(3) {
   opacity: 0;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
   transform: translateX(100%);
 }
 header.fixed {
@@ -46,6 +67,10 @@ header.fixed {
   top: 0;
   height: 80px;
   background: rgba(0, 0, 0, 0.9);
+  -ms-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 header.fixed.menu {
@@ -56,10 +81,17 @@ header.fixed.menu {
   position: absolute;
   top: 50%;
   left: 50px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 50px;
   z-index: 1;
   mix-blend-mode: difference;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #fff;
 }
@@ -101,6 +133,9 @@ header.fixed.menu {
   left: 50%;
   animation: menu-animation2 1.5s linear forwards;
   opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin: 0 auto;
   z-index: -1;
@@ -132,6 +167,9 @@ header.fixed.menu {
 .overlay ul li {
   opacity: 0;
   text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .overlay ul li a {
@@ -151,6 +189,10 @@ header.fixed.menu {
   position: absolute;
   bottom: 5px;
   left: -20px;
+  -ms-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   z-index: -1;
   opacity: 0.5;
@@ -231,6 +273,10 @@ header.fixed.menu {
   bottom: 50px;
   cursor: pointer;
   opacity: 0;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .topBtn::before {
@@ -238,7 +284,7 @@ header.fixed.menu {
   content: "";
   width: 24px;
   height: 13px;
-  background: url("../image/button/topBtn.png") 0 0 no-repeat;
+  background: url("/topBtn.bb82cdac.png") 0 0 no-repeat;
   background-size: contain;
 }
 .topBtn.on {
@@ -276,6 +322,10 @@ header.fixed.menu {
   overflow: hidden;
   width: 1200px;
   margin: 0 auto;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .innerWrap .box {
@@ -291,6 +341,9 @@ header.fixed.menu {
   color: #fff;
   font-size: 70px;
   position: absolute;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 .innerWrap > .title p:nth-child(1) {
@@ -304,12 +357,10 @@ header.fixed.menu {
 
 @keyframes animate {
   0%, 100% {
-    -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
   }
   50% {
-    -webkit-clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
 }
 .section1 {
@@ -327,6 +378,9 @@ header.fixed.menu {
   position: absolute;
   top: calc(50% + 100px);
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 100;
   opacity: 1;
@@ -374,6 +428,9 @@ header.fixed.menu {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 1000;
   font-size: 4em;
@@ -394,6 +451,9 @@ header.fixed.menu {
   position: absolute;
   bottom: -120px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 100%;
   opacity: 0;
@@ -408,6 +468,10 @@ header.fixed.menu {
   border-bottom: 1px solid #000;
   font-size: 0;
   z-index: 1000;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .fix_bn > div {
@@ -427,8 +491,7 @@ header.fixed.menu {
   right: 0;
   left: auto;
   background-color: #fff;
-  -webkit-clip-path: polygon(calc(50% + 20px) 0%, 100% 0%, 100% 100%, 50% 100%);
-          clip-path: polygon(calc(50% + 20px) 0%, 100% 0%, 100% 100%, 50% 100%);
+  clip-path: polygon(calc(50% + 20px) 0%, 100% 0%, 100% 100%, 50% 100%);
 }
 .fix_bn > div p {
   display: inline-block;
@@ -454,9 +517,13 @@ header.fixed.menu {
 
 @keyframes rotate {
   from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -491,6 +558,10 @@ header.fixed.menu {
   height: auto;
   margin-right: 50px;
   overflow: hidden;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .section2 .innerWrap .imgArea img {
@@ -558,6 +629,10 @@ header.fixed.menu {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   position: absolute;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .section3 .workSwiper .swiper-slide:hover .imgArea::before {
@@ -567,6 +642,9 @@ header.fixed.menu {
   position: absolute;
   bottom: 50px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 80px;
   background-color: #fff;
@@ -575,14 +653,14 @@ header.fixed.menu {
   width: 32px;
   height: 32px;
   background-size: 32px;
-  background-image: url("../image/button/swiper_left.png");
+  background-image: url("/swiper_left.29340423.png");
   left: 0;
 }
 .section3 .workSwiper .swiper-button-next {
   width: 32px;
   height: 32px;
   background-size: 32px;
-  background-image: url("../image/button/swiper_right.png");
+  background-image: url("/swiper_right.77b01ce3.png");
   right: 0;
 }
 .section3 .workSwiper .swiper-pagination-progressbar {
@@ -673,6 +751,10 @@ header.fixed.menu {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   position: absolute;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .section4 .skillSwiper .swiper-slide:hover .imgArea::before {
@@ -682,6 +764,9 @@ header.fixed.menu {
   position: absolute;
   bottom: 50px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 80px;
   background-color: #fff;
@@ -690,14 +775,14 @@ header.fixed.menu {
   width: 32px;
   height: 32px;
   background-size: 32px;
-  background-image: url("../image/button/swiper_left.png");
+  background-image: url("/swiper_left.29340423.png");
   left: 0;
 }
 .section4 .skillSwiper .swiper-button-next {
   width: 32px;
   height: 32px;
   background-size: 32px;
-  background-image: url("../image/button/swiper_right.png");
+  background-image: url("/swiper_right.77b01ce3.png");
   right: 0;
 }
 .section4 .skillSwiper .swiper-pagination-progressbar {
@@ -832,6 +917,10 @@ header.fixed.menu {
   position: absolute;
   bottom: 0;
   left: 0;
+  -ms-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
   transition: all 1.2s ease-in-out;
 }
 .section5 .inner ul li:hover::before {
@@ -862,6 +951,9 @@ header.fixed.menu {
   position: absolute;
   top: 50%;
   left: -15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .section5 .inner ul li div > p b {
@@ -883,25 +975,28 @@ header.fixed.menu {
   position: absolute;
   top: 50%;
   left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .section5 .inner ul li div > p.tit.jnet::before {
-  background: url("/include/image/main//ico_jnet.png");
+  background: url("/ico_jnet.5c326578.png");
 }
 .section5 .inner ul li div > p.tit.wisa::before {
-  background: url("/include/image/main//ico_wisa.png");
+  background: url("/ico_wisa.f1c23126.png");
 }
 .section5 .inner ul li div > p.tit.design::before {
-  background: url("/include/image/main//ico_design.png");
+  background: url("/ico_design.094f9ae0.png");
 }
 .section5 .inner ul li div > p.tit.eims::before {
-  background: url("/include/image/main//ico_eims.png");
+  background: url("/ico_eims.6855fb7c.png");
 }
 .section5 .inner ul li div > p.tit.sisoft::before {
-  background: url("/include/image/main//ico_sisoft.png");
+  background: url("/ico_sisoft.ee66d926.png");
 }
 .section5 .inner ul li div > p.tit.nsglobal::before {
-  background: url("/include/image/main//ico_nsglobal.png");
+  background: url("/ico_nsglobal.971f0acc.png");
 }
 .section5 .inner ul li.on div p.date b {
   color: #9b815d;
@@ -926,6 +1021,10 @@ header.fixed.menu {
   max-width: 100%;
   height: 35px;
   border-radius: 30px;
+  -ms-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   font-weight: 600;
   text-align: center;
@@ -1215,6 +1314,9 @@ header.fixed.menu {
     width: 200px;
     height: 200px;
   }
+  .slogan .subtxt {
+    bottom: -85px;
+  }
   .overlay ul li a {
     font-size: 2em;
   }
@@ -1225,4 +1327,6 @@ header.fixed.menu {
     min-height: 0;
     height: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=/style2.5959c0cc.css.map */
