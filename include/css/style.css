@@ -216,6 +216,24 @@ header .menu.fixed.menu {
     color: transparent;
   }
 }
+@keyframes menu-animation3 {
+  0% {
+    color: transparent;
+    width: 4em;
+    height: 4em;
+    top: 0em;
+  }
+  50% {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  to {
+    width: 3999px;
+    height: 3999px;
+    border-radius: 9999px;
+    color: transparent;
+  }
+}
 .topBtn {
   display: flex;
   justify-content: center;
@@ -991,7 +1009,7 @@ header .menu.fixed.menu {
   header {
     height: 70px;
   }
-  header .path .line {
+  header .menu .path .line {
     width: 30px;
     height: 2px;
   }
@@ -1168,6 +1186,9 @@ header .menu.fixed.menu {
   .fix_bn > div p span {
     font-size: 15px;
   }
+  .overlay.is-open::before {
+    animation: menu-animation3 1.5s linear forwards;
+  }
   .overlay ul li a {
     font-size: 2.8em;
   }
@@ -1225,6 +1246,9 @@ header .menu.fixed.menu {
   .objectArea {
     width: 200px;
     height: 200px;
+  }
+  .slogan .subtxt {
+    bottom: -85px;
   }
   .overlay ul li a {
     font-size: 2em;

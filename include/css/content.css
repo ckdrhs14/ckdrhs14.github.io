@@ -686,7 +686,7 @@
     margin-right: 10px;
   }
   .pjList li .txtArea .color p + p {
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
   .listWrap .contentWrap {
     width: 100%;

@@ -699,7 +699,7 @@ $url: "../image/";
 						@include margin($right:10px);
 					}
 					p + p {
-						@include margin($left:0px);
+						@include margin($left:0px !important);
 					}
 				}
 			}

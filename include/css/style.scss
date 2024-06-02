@@ -208,6 +208,25 @@ header {
   }
 }
 
+@keyframes menu-animation3 {
+    0% {
+      color: transparent;
+      width: 4em;
+      height: 4em;
+      top:0em;
+    }
+    50% {
+      width: 1.5em;
+      height: 1.5em;
+    }
+    to {
+      width: 3999px;
+      height: 3999px;
+      border-radius: 9999px;
+      color: transparent;
+    }
+  }
+
 // topBtn
 .topBtn {
     @include center;
@@ -995,10 +1014,12 @@ header {
     // header
     header {
         height:70px;
-        .path {
-            .line {
-                width:30px;
-                height:2px;
+        .menu {
+            .path {
+                .line {
+                    width:30px;
+                    height:2px;
+                }
             }
         }
     }
@@ -1252,6 +1273,11 @@ header {
         }
     }
 	.overlay {
+        &.is-open {
+            &::before {
+                animation:menu-animation3 1.5s linear forwards;
+            }
+        }
         ul {
             li {
                 a {
@@ -1355,6 +1381,11 @@ header {
 	.objectArea {
         width:200px;
         height:200px;
+    }
+	.slogan {
+        .subtxt {
+            bottom:-85px;
+        }
     }
 
 	.overlay {
