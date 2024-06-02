@@ -705,9 +705,9 @@
 
 <script src="/script.c9fb4d6a.js"></script>
 <script>var swiper = new Swiper(".workSwiper", {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 30,
+  slidesPerView: 1.5,
+  slidesPerGroup: 1.5,
+  spaceBetween: 20,
   loop: true,
   speed: 800,
   pagination: {
@@ -723,20 +723,27 @@
     1024: {
       slidesPerView: 3,
       //브라우저가 1024보다 클 때
-      slidesPerGroup: 3
+      slidesPerGroup: 3,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2.5,
+      //브라우저가 768 클 때
+      slidesPerGroup: 2.5,
+      spaceBetween: 20
     },
     640: {
-      slidesPerView: 1.2,
-      //브라우저가 1024보다 클 때
-      slidesPerGroup: 1.2,
+      slidesPerView: 1.5,
+      //브라우저가 640 클 때
+      slidesPerGroup: 1.5,
       spaceBetween: 20
     }
   }
 });
 var swiper = new Swiper(".skillSwiper", {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 30,
+  slidesPerView: 1.5,
+  slidesPerGroup: 1.5,
+  spaceBetween: 20,
   loop: true,
   speed: 800,
   pagination: {
@@ -752,12 +759,19 @@ var swiper = new Swiper(".skillSwiper", {
     1024: {
       slidesPerView: 3,
       //브라우저가 1024보다 클 때
-      slidesPerGroup: 3
+      slidesPerGroup: 3,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2.5,
+      //브라우저가 768 클 때
+      slidesPerGroup: 2.5,
+      spaceBetween: 20
     },
     640: {
-      slidesPerView: 1.2,
-      //브라우저가 1024보다 클 때
-      slidesPerGroup: 1.2,
+      slidesPerView: 1.5,
+      //브라우저가 640 클 때
+      slidesPerGroup: 1.5,
       spaceBetween: 20
     }
   }

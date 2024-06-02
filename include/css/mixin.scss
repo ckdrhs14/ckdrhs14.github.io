@@ -57,11 +57,14 @@ $translate: translateY(-50%);
     transition: all $transition ease-in-out;
 }
 
-@mixin text-overflow {
-    display:block;
-    overflow:hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
+@mixin text-overflow($lineCount: 1) {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lineCount;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
 }
 
 $full : 100%;

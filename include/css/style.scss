@@ -248,7 +248,7 @@ header {
 .section {
     position:relative; 
     background: var(--main-bg-color); 
-    color: var(--main-font-color); 
+    color: #fff; 
     min-height:800px; 
     height:100vh; 
     @include center;
@@ -503,6 +503,7 @@ header {
                 font-weight:400;
                 z-index:1;
                 strong {
+                    position:relative;
                     font-weight:800;
                 }
                 .highlight {
@@ -674,6 +675,7 @@ header {
 .section4 {
     .skillSwiper {
         @include margin($top:50px, $bottom:70px);
+        @include padding($bottom:70px);        
         .swiper-slide {
             .imgArea {
                 @include effectLayout;
@@ -1002,7 +1004,8 @@ header {
     }
     
 	.objectArea {
-        width:430px; height:430px;
+        width:430px;
+        height:430px;
     }
 
 	.slogan {
@@ -1011,6 +1014,11 @@ header {
 
 	.innerWrap {
         width:1100px;
+    }
+
+    .section3 .workSwiper, .section4 .skillSwiper {
+        @include margin($bottom:20px);
+        @include padding($bottom:40px);
     }
 }
 
@@ -1032,14 +1040,15 @@ header {
     }
 
 	.topBtn {
-        bottom:30px; right:30px;
+        bottom:30px;
+        right:30px;
     }
 
 	.section {
         padding:0 40px;
     }
 	.innerWrap {
-        width:100%;
+        width:$full;
     }
 
 	.section5 {
@@ -1048,14 +1057,9 @@ header {
                 padding:10px 15px;
                 div {
                     &.row {
-                        > p {margin-right:20px;
-                            overflow: hidden;
-                            white-space: normal;
-                            text-overflow: ellipsis;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 1;
-                            -webkit-box-orient: vertical;
-                            word-break: keep-all;
+                        > p {
+                            margin-right:20px;
+                            @include text-overflow(2);
                             &.date {
                                 min-width:150px;
                             }
@@ -1097,7 +1101,9 @@ header {
     }
 
 	.section:not(.section1) {
-        height:100%; min-height:100%; padding:70px 30px;
+        height:100%;
+        min-height:100%;
+        padding:70px 30px;
     }
 	.innerWrap {
         .box {
@@ -1127,6 +1133,10 @@ header {
             margin:0 auto;
             text-align:center;
         }
+    }
+
+    .section3, .section4 {
+        @include padding($right:0 !important);
     }
 
 
@@ -1179,9 +1189,14 @@ header {
     }
 	.overlay {
         .closeBtn {
-            width:45px; height:45px; right:20px; top:12px;
+            width:45px; 
+            height:45px;
+            right:20px;
+            top:12px;
             &::before, &::after {
-                width:25px; margin-left:-13px; margin-top:-2px;
+                width:25px;
+                margin-left:-13px;
+                margin-top:-2px;
             }
         }
     }
@@ -1191,7 +1206,8 @@ header {
         bottom:20px;
         right:20px;
         &::before {
-            width:16px; height:9px;
+            width:16px;
+            height:9px;
         }
     }
 
@@ -1212,7 +1228,8 @@ header {
 	.section2 {
         .innerWrap {
             .imgArea {
-                margin:0 0 30px 0; width:240px;
+                margin:0 0 30px 0;
+                width:240px;
             }
         }
     }
@@ -1269,7 +1286,8 @@ header {
 
 	.innerWrap {
         > .title {
-            height:auto; margin-bottom:25px;
+            height:auto;
+            margin-bottom:25px;
             p {
                 font-size:42px;
             }
@@ -1295,6 +1313,7 @@ header {
 	.section3 .workSwiper,
 	.section4 .skillSwiper {
         margin:50px 0 20px 0;
+        padding-bottom:30px;
     }
 	.section4 {
         .innerWrap {
@@ -1338,10 +1357,23 @@ header {
         height:200px;
     }
 
-	.overlay ul li a {font-size:2em;}
-	.overlay ul li + li {margin-top:10px;}
+	.overlay {
+        ul {
+            li {
+                a {
+                    font-size:2em;
+                }
+            }
+            li + li {
+                margin-top:10px;
+            }
+        }
+    }
 
-	.section1 {min-height:0; height:100%;}
+	.section1 {
+        min-height:0;
+        height:100%;
+    }
 }
 
 
