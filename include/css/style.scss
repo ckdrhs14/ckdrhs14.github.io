@@ -18,42 +18,42 @@ header {
         @include translateY;
         z-index:1;
         mix-blend-mode:difference;
+        cursor: pointer;
         @include transition($transition: .3s);
-    }
-    .path {
-        .line {
-            width: 35px; 
-            height: 3px;
-            background-color: #ecf0f1;
-            display: block;
-            margin: 8px auto;
-            @include transition($transition: .3s);
-            &:hover {
-                cursor: pointer;
-            }
-        }
-        &.is-active {
+        .path {
             .line {
-                &:nth-child(1) {
-                    opacity: $zero;
-                    @include translateX(-100%);
-                }
-                &:nth-child(3) {
-                    opacity: $zero;
-                    @include translateX(100%);
+                width: 35px; 
+                height: 3px;
+                background-color: #ecf0f1;
+                display: block;
+                margin: 8px auto;
+                @include transition($transition: .3s);
+                
+            }
+            &.is-active {
+                .line {
+                    &:nth-child(1) {
+                        opacity: $zero;
+                        @include translateX(-100%);
+                    }
+                    &:nth-child(3) {
+                        opacity: $zero;
+                        @include translateX(100%);
+                    }
                 }
             }
         }
-    }
-    &.fixed {
-        @include position(fixed, $top:0);
-        height:80px;
-        background:rgba(0,0,0,.9);
-        @include transition($transition: 1s);
-        &.menu {
-            top : 17px;
+        &.fixed {
+            @include position(fixed, $top:0);
+            height:80px;
+            background:rgba(0,0,0,.9);
+            @include transition($transition: 1s);
+            &.menu {
+                top : 17px;
+            }
         }
     }
+    
 }
 
 // logo
@@ -889,7 +889,7 @@ header {
                                 background:url("#{$url}/ico_jnet.png");
                             }
                             &.wisa::before {
-                                background:url("#{$url}/ico_wisa.png");
+                                background:url("#{$url}/ico_wisa2.png");
                             }
                             &.design::before {
                                 background:url("#{$url}/ico_design.png");

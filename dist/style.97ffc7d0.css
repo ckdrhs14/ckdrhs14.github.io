@@ -20,9 +20,10 @@ header .menu {
   transform: translateY(-50%);
   z-index: 1;
   mix-blend-mode: difference;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-header .path .line {
+header .menu .path .line {
   width: 35px;
   height: 3px;
   background-color: #ecf0f1;
@@ -30,25 +31,22 @@ header .path .line {
   margin: 8px auto;
   transition: all 0.3s ease-in-out;
 }
-header .path .line:hover {
-  cursor: pointer;
-}
-header .path.is-active .line:nth-child(1) {
+header .menu .path.is-active .line:nth-child(1) {
   opacity: 0;
   transform: translateX(-100%);
 }
-header .path.is-active .line:nth-child(3) {
+header .menu .path.is-active .line:nth-child(3) {
   opacity: 0;
   transform: translateX(100%);
 }
-header.fixed {
+header .menu.fixed {
   position: fixed;
   top: 0;
   height: 80px;
   background: rgba(0, 0, 0, 0.9);
   transition: all 1s ease-in-out;
 }
-header.fixed.menu {
+header .menu.fixed.menu {
   top: 17px;
 }
 
@@ -891,7 +889,7 @@ header.fixed.menu {
   background: url("/ico_jnet.5c326578.png");
 }
 .section5 .inner ul li div > p.tit.wisa::before {
-  background: url("/ico_wisa.f1c23126.png");
+  background: url("/ico_wisa2.ccc98d1a.png");
 }
 .section5 .inner ul li div > p.tit.design::before {
   background: url("/ico_design.094f9ae0.png");
@@ -1098,6 +1096,9 @@ header.fixed.menu {
   .section2 .btnGroup {
     margin: 0 auto;
     text-align: center;
+  }
+  .section3, .section4 {
+    padding-right: 0 !important;
   }
   .section5 ul li div {
     flex-wrap: wrap;

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ko">
 <!--
    ██╗	  ███████╗███████╗   ███████╗   ████████╗
    ██║	  ██╔════╝██╔════╝   ██╔════╝   ██╔═════╝
@@ -6,8 +8,6 @@
    ██████╗███████╗███████╗██╗███████╗██╗████████║
    ╚═════╝╚══════╝╚══════╝╚═╝╚══════╝╚═╝╚═══════╝
 -->
-<!doctype html>
-<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="Generator" content="EditPlus®">
@@ -15,18 +15,18 @@
 	<meta name="Author" content="">
 	<meta name="Keywords" content="">
 	<meta name="Description" content="">
-	<link rel="stylesheet" href="../include/css/swiper.min.css">
 	<link href="../include/css/default.css" rel="stylesheet">
 	<link href="../include/css/style.css" rel="stylesheet">
 	<link href="../include/css/content.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="../include/js/swiper.min.js"></script>
 	<script src="../include/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<title>LEE.c.g</title>
 </head>
 
@@ -208,8 +208,8 @@
 
 <script>
 var swiper = new Swiper(".skillList", {
-	slidesPerView: 5,
-	slidesPerGroup: 5,
+	slidesPerView: 1.8,
+	slidesPerGroup: 1.8,
 	spaceBetween: 15,
 	loop: false,
 	speed : 800,
@@ -217,19 +217,38 @@ var swiper = new Swiper(".skillList", {
 	breakpoints: {
 	
 	  1200: {
-		slidesPerView: 4,  //브라우저가 1200보다 클 때
-		slidesPerGroup: 4,
+		slidesPerView: 5,  //브라우저가 1200보다 클 때
+		slidesPerGroup: 5,
 	  },
 	  1024: {
-		slidesPerView: 3,  //브라우저가 1024보다 클 때
-		slidesPerGroup: 3,
+		slidesPerView: 4,  //브라우저가 1024보다 클 때
+		slidesPerGroup: 4,
 		spaceBetween: 15,
 	  },
 	  640: {
-		slidesPerView: 1.8,  //브라우저가 768보다 클 때
-		slidesPerGroup: 1.8,
+		slidesPerView: 2.5,  //브라우저가 768보다 클 때
+		slidesPerGroup: 2.5,
 	  },
 	},
+});
+
+gsap.utils.toArray(".scrollBanner").forEach(section => {
+	let tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: section,
+				start: "center center",
+				// makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+				end: () => "+=" + section.offsetWidth, 
+				scrub: true,
+				pin: true,
+		anticipatePin: 1
+			},
+			defaults: {ease: "none"}
+		});
+		// animate the container one way...
+		tl.fromTo(section.querySelector(".afterImage"), { xPercent: 100, x: 0}, {xPercent: 0})
+		// ...and the image the opposite way (at the same time)
+		.fromTo(section.querySelector(".afterImage img"), {xPercent: -100, x: 0}, {xPercent: 0}, 0);
 });
 </script>
 
