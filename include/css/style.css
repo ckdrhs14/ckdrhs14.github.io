@@ -49,6 +49,21 @@ header .menu.fixed {
 header .menu.fixed.menu {
   top: 17px;
 }
+header .progress-container {
+  margin-top: 1px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  border-bottom: 1px solid #000;
+}
+header .progress-container .progress-bar {
+  height: 1px;
+  background: #ddd;
+  width: 0%;
+  transition: all 0.05s;
+}
 
 .logo {
   position: absolute;
@@ -334,6 +349,24 @@ header .menu.fixed.menu {
   overflow: hidden;
   background-color: #000;
 }
+.section1 video {
+  width: 100%;
+  height: 100%;
+}
+.section1 .clipped-video {
+  -webkit-clip-path: url(#text-overlay);
+          clip-path: url(#text-overlay);
+}
+.section1 svg {
+  font-size: 15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: font-size 0.5s;
+}
 
 .objectArea {
   width: 450px;
@@ -487,6 +520,54 @@ header .menu.fixed.menu {
     filter: saturate(100%);
   }
 }
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+#section-slogan {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 19%, rgb(14, 14, 14) 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-slogan h1 {
+  overflow: hidden;
+  font-size: 10rem;
+  font-weight: 800;
+  transition: all 0.5s;
+}
+#section-slogan h1 div {
+  transform: translateY(100%);
+  line-height: 1.2;
+}
+
+#section-marquee {
+  overflow: hidden;
+  margin-bottom: 10rem;
+}
+#section-marquee .text {
+  width: 300%;
+  animation: marquee 60s linear infinite;
+}
+#section-marquee .text p {
+  transition: all 0.5s;
+  white-space: nowrap;
+  background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(37, 37, 37) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1.2;
+  font-size: 10rem;
+  font-weight: 800;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -1013,6 +1094,15 @@ header .menu.fixed.menu {
     width: 30px;
     height: 2px;
   }
+  .section1 svg {
+    font-size: 10rem;
+  }
+  #section-slogan h1 {
+    font-size: 7rem;
+  }
+  #section-marquee .text p {
+    font-size: 7rem;
+  }
   .objectArea {
     width: 430px;
     height: 430px;
@@ -1041,6 +1131,9 @@ header .menu.fixed.menu {
   .topBtn {
     bottom: 30px;
     right: 30px;
+  }
+  .section1 {
+    display: none;
   }
   .section {
     padding: 0 40px;
@@ -1103,6 +1196,16 @@ header .menu.fixed.menu {
   }
   #myCanvas {
     display: none;
+  }
+  #section-slogan {
+    height: 100%;
+    padding: 10rem 0;
+  }
+  #section-slogan h1 {
+    font-size: 5rem;
+  }
+  #section-marquee .text p {
+    font-size: 5rem;
   }
   .section2 .innerWrap .imgArea {
     margin: 0 0 40px 0;
@@ -1173,6 +1276,15 @@ header .menu.fixed.menu {
   }
   .section:not(.section1) {
     padding: 50px 25px;
+  }
+  .section1 svg {
+    font-size: 5rem;
+  }
+  #section-slogan h1 {
+    font-size: 3.5rem;
+  }
+  #section-marquee .text p {
+    font-size: 3.5rem;
   }
   .section2 .innerWrap .imgArea {
     margin: 0 0 30px 0;
@@ -1256,8 +1368,10 @@ header .menu.fixed.menu {
   .overlay ul li + li {
     margin-top: 10px;
   }
-  .section1 {
-    min-height: 0;
-    height: 100%;
+  #section-slogan h1 {
+    font-size: 3rem;
+  }
+  #section-marquee .text p {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */

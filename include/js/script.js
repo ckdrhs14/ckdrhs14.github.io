@@ -40,12 +40,9 @@ $(function(){
 	});
 
 
+
 	
-	$('.pjList').isotope({
-	  itemSelector: '.pjList li',
-	  transitionDuration: 600,
-	  sortBy : 'original-order',
-	});
+	  
 
 
 	$('.tab').on( 'click', 'div', function() {

@@ -51,7 +51,7 @@
 		<a href="javascript:void(0);" class="closeBtn" style="opacity: 1;">창 닫기</a>
 	</div>
 
-	<header class="header" style="top:-80px;">
+	<header class="header">
 		<div class="logo">
 			<a href="index.html">LEE.c.g</a>
 		</div>
@@ -63,40 +63,42 @@
 				<span class="line"></span>
 			</div>
 		</div>
+		<div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
 	</header>
-	
-	<h1 class="clock"></h1>
-	<div class="fix_bn">
-		<div class="left">
-			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-		</div>
-		<div class="right">
-			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-			<p><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span><span>Try not to become a man of success but rather try to become a man of value.</span></p>
-		</div>
+
+	<div class="section section1" id="section-main">
+		<video muted="" autoplay="" loop="" class="clipped-video">
+			<source src="include/image/sample_33.mp4" type="video/mp4">
+		</video>
+		<svg width="100%" height="100%">
+			<clipPath id="text-overlay" width="100%" height="100%">
+				<text id="title" x="50%" y="55%" text-anchor="middle">PORTFOLIO</text>
+			</clipPath>
+		</svg>
 	</div>
 
-	<div class="section section1">
-		<div class="videoBg">
-			<video muted autoplay loop>
-				<source src="include/video/testVideo5.mp4" type="video/mp4">
-			</video>
+	<section id="section-slogan">
+		<div>
+			<h1>
+				<div>I'm</div>
+			</h1>
+			<h1>
+				<div>Passion</div>
+			</h1>
+			<h1>
+				<div>WebPublisher</div>
+			</h1>
 		</div>
-		<div class="videoBg2">
-			<video muted autoplay loop>
-				<source src="include/video/testVideo4.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div class="objectArea">
-			<img src="include/image/planet_04.png" alt="" / id="moon">
-		</div>
-
-		<div class="slogan">
-			<p class="typing"></p>
-			<p class="subtxt">NICE TO MEET YOU 🖐</p>
-		</div>
-	</div>
+	</section>
+	<section id="section-marquee">
+		<div class="text">
+			<p>POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE</p>
+			<p>DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER</p>
+			<p>MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF</p>
+		  </div>
+	</section>
 
 	
 
@@ -725,8 +727,6 @@
 	</div>
 </body>
 
-<script src="./include/js/typing.js"></script>
-
 <script>
 
     var swiper = new Swiper(".workSwiper", {
@@ -809,6 +809,49 @@
 			$(".fix_bn").removeClass("on");
 		}
 	});
+
+	gsap.to('text', {
+		scrollTrigger : {
+			trigger: 'svg',
+			start: 'bottom 80%',
+			end: 'bottom 20%',
+			scrub: 2,
+			markers:false,
+		},
+		scale: 0.9,
+		opacity: 0,
+		transformOrigin: 'center',
+		duration: 2,
+		ease: 'power4.out'
+	})
+
+	gsap.to('#section-slogan h1 div', {
+		duration:0.3,
+		y:0,
+		stagger:0.1,
+		scrollTrigger: {
+			trigger: "#section-slogan h1 div",
+			markers: false,
+			scrub: 5,
+			start: 'top center',
+			end: 'top center',
+			toggleActions: "restart none reverse none"
+		}
+	});
+
+	gsap.to(".text p", {
+		backgroundPositionX: "0%",
+		stagger: 0.1,
+		scrollTrigger: {
+			trigger: ".text",
+			markers: false,
+			scrub: 1,
+			y:50,
+			start: "top center",
+			end: "bottom center",
+		}
+	});
+
 
 
 
