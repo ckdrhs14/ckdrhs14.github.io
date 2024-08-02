@@ -880,10 +880,15 @@ main {
     border-radius: 50px;
   }
   .section-contact .bg-video .videoText div p {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
+  }
+  .section-contact .bg-video .videoText div h2 {
+    font-weight: 600;
   }
   .section-contact .bg-video .videoText div + div {
-    font-size: 2.8rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .footer {
     font-size: 1.2rem;
