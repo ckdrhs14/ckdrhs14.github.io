@@ -1,860 +1,302 @@
 <!DOCTYPE html>
 <html lang="ko">
-<!--
-   ██╗	  ███████╗███████╗   ███████╗   ████████╗
-   ██║	  ██╔════╝██╔════╝   ██╔════╝   ██╔═════╝
-   ██║	  ███████╗███████╗   ██║        ██║
-   ██║	  ██╔════╝██╔════╝   ██║        ██║   ██╗
-   ██████╗███████╗███████╗██╗███████╗██╗████████║
-   ╚═════╝╚══════╝╚══════╝╚═╝╚══════╝╚═╝╚═══════╝
--->
 <head>
-	<meta charset="UTF-8">
-	<meta name="Generator" content="EditPlus®">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="Author" content="">
-	<meta name="Keywords" content="">
-	<meta name="Description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 | Web publisher by.LeeChangGon</title>
 	<link href="./include/css/default.css" rel="stylesheet">
 	<link href="./include/css/style.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="shortcut icon" href="include/image/favicon.ico">
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./include/image/favicon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="./include/js/script.js"></script>
-    <script src="./include/js/cursor.js"></script>
-	<script src="./include/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-	<title>LEE.c.g</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="./include/js/main.js"></script>
+    <script src="./include/js/gsap.js"></script>
 </head>
-
-
 <body>
-	<div id="drawing_line">
-	  <svg class="drawing_line_svg">
-		<circle class="drawing_line_circle" cx="0" cy="0" r="8"></circle>
-		<polyline class="drawing_line_polyline" points=""></polyline>
-	  </svg>
-	</div>
-
-	<div class="overlay">
-		<ul>
-			<li><a href="/">HOME</a></li>
-			<li><a href="./page/work_portfolio.html">WORK PORTFOLIO</a></li>
-			<li><a href="./page/skill_portfolio.html">SKILL PORTFOLIO</a></li>
-			<li><a href="./page/introduce.html">INTRODUCE</a></li>
-		</ul>
-		<a href="javascript:void(0);" class="closeBtn" style="opacity: 1;">창 닫기</a>
-	</div>
-
-	<header class="header">
-		<div class="logo">
-			<a href="index.html">LEE.c.g</a>
-		</div>
-
-		<div class="menu">
-			<div class="path">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
-			</div>
-		</div>
-		<div class="progress-container">
-            <div class="progress-bar"></div>
+    <header class="header-module nav-down">
+        <div class="logo">
+            <a href="/">LEE.c.g</a>
         </div>
-	</header>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/ckdrhs14" target="_blank" title="github 바로가기"><img src="./include/image/main/ico_github.png" alt="github 바로가기"/></a></li>
+                <li><a href="https://mirror-soldier-be2.notion.site/1480dfb3209744cbb89b507e9284ffbe" target="_blank" title="notion(경력기술) 바로가기"><img src="./include/image/main/ico_notion.png" alt="notion(경력기술) 바로가기"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-section section-slogan">
+            <div class="main-section__inner">
+                <div class="main-section__inner-row">
+                    <h2>
+                        <div>I'm</div>
+                    </h2>
+                </div>
+                <div class="main-section__inner-row">
+                    <h2>
+                        <div>WebPublisher</div>
+                    </h2>
+                </div>
+                <div class="main-section__inner-row">
+                    <h2>
+                        <div>name.</div>
+                    </h2>
+                    <div class="main-section__inner-video">
+                        <video muted="" autoplay="" loop="" class="clipped-video">
+                            <source src="include/image/sample_41.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h2>
+                        <div>LeeCg</div>
+                    </h2>
+                </div>
+            </div>
+        </section>
 
-	<div class="section section1" id="section-main">
-		<video muted="" autoplay="" loop="" class="clipped-video">
-			<source src="include/image/sample_33.mp4" type="video/mp4">
-		</video>
-		<svg width="100%" height="100%">
-			<clipPath id="text-overlay" width="100%" height="100%">
-				<text id="title" x="50%" y="55%" text-anchor="middle">PORTFOLIO</text>
-			</clipPath>
-		</svg>
-	</div>
+        <section class="main-section section-text">
+            <div class="section-text__wrap">
+                <div class="section-text__box tal">
+                    <p>안녕하세요</p>
+                    <p>긍정적인 마인드와</p>
+                    <p>웹에 대한 다양한 경험으로</p>
+                    <p>사용자에게 웹의 다이나믹한</p>
+                    <p>경험을 선사하고 싶습니다.</p>
+                </div>
+                <div class="section-text__box tar">
+                    <p>무엇이든 표현할 수 있고</p>
+                    <p>그것을 가능하게 하는 것은</p>
+                    <p>상상력입니다.</p>
+                    <p>기억에 남는 UX를</p>
+                    <p>제공하겠습니다.</p>
+                </div>
+            </div>
+        </section>
 
-	<section id="section-slogan">
-		<div>
-			<h1>
-				<div>I'm</div>
-			</h1>
-			<h1>
-				<div>Passion</div>
-			</h1>
-			<h1>
-				<div>WebPublisher</div>
-			</h1>
-		</div>
-	</section>
-	<section id="section-marquee">
-		<div class="text">
-			<p>POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE POSITIVE</p>
-			<p>DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER</p>
-			<p>MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF MY SELF</p>
-		  </div>
-	</section>
+        <section class="main-section section-parallax">
+            <h2 class="section-parallax__title">
+                <span>DYNAMIC</span>
+            </h2>
+            <div class="section-parallax__inner">
+                <div data-speed="1.5">
+                    <img src="./include/image/main/watercolor_01.png" alt="figure" />
+                </div>
+                <div data-speed="3.5">
+                    <img src="./include/image/main/watercolor_02.png" alt="figure" />
+                </div>
+                <div data-speed="0.5">
+                    <img src="./include/image/main/watercolor_03.png" alt="figure" />
+                </div>
+                <div data-speed="3">
+                    <img src="./include/image/main/watercolor_04.png" alt="figure" />
+                </div>
+                <div data-speed="2">
+                    <img src="./include/image/main/watercolor_05.png" alt="figure" />
+                </div>
+                <div data-speed="3">
+                    <img src="./include/image/main/watercolor_07.png" alt="figure" />
+                </div>
+            </div>
+        </section>
+        
+        <div class="line__wrap">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
 
-	
+        <section class="main-section section-project">
+            <div class="section-project__inner">
+                <div class="marquee">
+                    <div class="marquee__inner forward">
+                        <div class="marquee__part">PROJECT PROJECT PROJECT</div>
+                    </div>
+                </div>
+                <ul class="section-project__list">
+                    <li class="section-project__item">
+                        <a href="https://seongnam.go.kr/main.do" target="_blank" title="성남시청 바로가기">
+                            <div class="section-project__item-num">1.</div>
+                            <h2 class="section-project__item-title">성남시청</h2>
+                            <div class="section-project__item-desc">
+                                <p>성남시청 웹페이지 리뉴얼 프로젝트에 참여하여 웹퍼블리싱 업무를 담당하였습니다.<br>
+                                    페이지 로드 속도를 중요시 하여 불필요한 레거시코드를 걷어내고 시청사이트 특성 상 뎁스가 깊어 사용자가 원하는 정보를 편하게 접근할 수 있도록
+                                    UI/UX를 구성하였습니다. 기존 고해상도의 이미지를 많이 채택하여 랜더링 속도에 영향을 주어 디자이너와 협의 후 이미지 최적화 작업을 진행하였습니다.<br>
+                                    추가로 Digital-OnePass 로그인 연동, 대관시설 신청 등 여러 기능개선을 참여하여 사이트의 전반적인 관리도 함께 담당하였습니다.
+                                </p>
+                                <span>#기여도 100%</span>
+                                <span>#HTML5</span>
+                                <span>#CSS</span>
+                                <span>#JQuery</span>
+                                <span>#swiper.js</span>
+                                <span>#C3.js</span>
+                            </div>
+                        </a>
+                    </li>
 
-	<div class="section section2">
-		<canvas id="myCanvas" width="100%" height="100%"></canvas>
-		<div>
-			<div class="innerWrap">
-				<div class="box">
-					<div class="imgArea">
-						<img src="include/image/introPhoto.jpg">
-					</div>
-					<div class="txtArea">
-						<h3 class="title"><strong class="highlight">: POSITIVE</strong> DEVELOPER</h3>
-						<p class="txt">안녕하세요, 웹퍼블리셔 및 프론트엔드 개발자 이창곤 입니다.<br class="mobileHide4">
-						남들과 다른 생각을 가지고 코딩에 임하는 것에 즐거움을 느끼고,<br class="mobileHide4">
-						긍정적인 마인드로 코딩 및 사회생활에 임하고 있습니다.
-						<br><br>
-						쇼핑몰, 공공기관, 도서관사업소, 홈페이지 구축 및 리뉴얼을 주로 진행하였고<br class="mobileHide3">
-						웹접근성&웹호환성 인증 및 유지보수, 기타 디자인작업도 함께 진행하였습니다.
-						<br><br>
-						업무를 진행할 때 디자인이 바쁘면 간단한 리디자인은 직접 진행하기도 하고,
-						<br class="mobileHide3">JSP나 DB테이블명도 일이 많아 보이면 간단하게 수정하며 서로 도와가며 일하는 걸 좋아합니다.
-						<br><br>
-						코딩은 계산적이지만 대인관계는 허물없이 지내는 <span class="highlight">긍정적인 자세</span>로 항상 임하고 있습니다.</p>
-					</div>
-				</div>
-				<div class="btnGroup">
-					<a href="page/introduce.html" class="btn">소개 더보기</a>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <li class="section-project__item">
+                        <a href="https://www.yjlib.go.kr/web/index.do" target="_blank" title="여주시립도서관 바로가기">
+                            <div class="section-project__item-num">2.</div>
+                            <h2 class="section-project__item-title">여주시립도서관</h2>
+                            <div class="section-project__item-desc">
+                                <p>
+                                    여주시립도서관 구축 프로젝트로 도서관 메인페이지, 도서검색기능, 도서관 정보, 마이페이지 등 도서관의 기본적인 기능을 담당하여 프로젝트를 진행하였습니다.<br>
+                                    메인페이지는 FullPage.js 라이브러리를 사용하여 스크롤링 액션에 중점을 두었고 전체적으로 반복되는 코드를 줄이고 추후 유지보수에 용이하고자
+                                    공통클래스 지정 및 반복되는 클래스를 최소화하였고 중간중간 이전 구축프로젝트에서 아쉬웠던 점들을 보완하고자 팀원들과 협의하며 진행하였습니다.
+                                    팝업영역의 SlideSpeed를 사용자에게 알려주고자 롤링카운트 추가, 공연 예약 시 좌석 UI 표현 등 이전보다 나은 프로젝트를 만들고자 노력하였습니다.
+                                </p>
+                                <span>#기여도 100%</span>
+                                <span>#HTML5</span>
+                                <span>#CSS</span>
+                                <span>#JQuery</span>
+                                <span>#swiper.js</span>
+                                <span>#FullPage.js</span>
+                                <span>#웹접근성 마크 취득</span>
+                            </div>
+                        </a>
+                    </li>
 
-	<div class="section section3">
-		<div class="innerWrap">
-			<h3 class="title">
-				<p>Work PortFolio</p>
-				<p>Work PortFolio</p>
-			</h3>
-			<div class="box">
-				<div class="swiper workSwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<a href="page/list/idfmall.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_shop_01.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">IDF 몰<span>(IDF MALL)</span></h3>
-									<p><b>사업기간</b> : 2020.07 ~ 2020.09</p>
-									<p><b>발주처</b> : 인동에프엔</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#000; border:1px solid #fff"></span>(#000)</p>
-											<p>Sub <span style="background:#fff ; border:1px solid #000;"></span>(#fff)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/daehyun.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_shop_02.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">대현인사이드<span>(DaeHyun Inside)</span></h3>
-									<p><b>사업기간</b> : 2020.08 ~ 2020.11</p>
-									<p><b>발주처</b> : (주)대현</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#000; border:1px solid #fff"></span>(#000)</p>
-											<p>Sub <span style="background:#fff ; border:1px solid #000;"></span>(#fff)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/giodano.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_shop_06.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">지오다노<span>(GIORDANO)</span></h3>
-									<p><b>사업기간</b> : 2020.10 ~ 2020.11</p>
-									<p><b>발주처</b> : (주)지오다노</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#000; border:1px solid #fff"></span>(#000)</p>
-											<p>Sub <span style="background:#fff ; border:1px solid #000;"></span>(#fff)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/ihmall.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_shop_05.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">이현어패럴<span>(IH MALL)</span></h3>
-									<p><b>사업기간</b> : 2020.09 ~ 2020.10</p>
-									<p><b>발주처</b> : (주)이현어패럴</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#000; border:1px solid #fff"></span>(#000)</p>
-											<p>Sub <span style="background:#fff ; border:1px solid #000;"></span>(#fff)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/esthermall.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_shop_04.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">에스더몰<span>(ESTHER MALL)</span></h3>
-									<p><b>사업기간</b> : 2020.10 ~ 2020.12</p>
-									<p><b>발주처</b> : 에스더포뮬러(주)</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#000; border:1px solid #fff"></span>(#000)</p>
-											<p>Sub <span style="background:#fff ; border:1px solid #000;"></span>(#fff)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/celecon.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_shop_03.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">셀렉온<span>(CELECON)</span></h3>
-									<p><b>사업기간</b> : 2020.09 ~ 2020.10</p>
-									<p><b>발주처</b> : (주)셀렉온</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#000; border:1px solid #fff"></span>(#000)</p>
-											<p>Sub <span style="background:#fff ; border:1px solid #000;"></span>(#fff)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/seongnamCity-Onestop.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_22.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">성남시 생활민원사이트<span>(One-Stop)</span></h3>
-									<p><b>사업기간</b> : 2022.11 ~ 2022.12</p>
-									<p><b>발주처</b> : 성남시청</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#bfd2e1;"></span>(#bfd2e1)</p>
-											<p>Sub <span style="background:#ecc8d4;"></span>(#ecc8d4)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/seongnamCity.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_24.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">성남시청<span>(SeongNam CityHall)</span></h3>
-									<p><b>사업기간</b> : 2023.04 ~ 2023.08</p>
-									<p><b>발주처</b> : 성남시청</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#d84048;"></span>(#d84048)</p>
-											<p>Sub <span style="background:#f8dee0;"></span>(#f8dee0)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/sneducare.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_14.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">성남육아종합지원센터<span>(Sneducare)</span></h3>
-									<p><b>사업기간</b> : 2021.09 ~ 2021.12</p>
-									<p><b>발주처</b> : 성남시육아종합지원센터</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background: #2653b0 ;"></span>(#2653b0)</p>
-											<p>Sub <span style="background: #7595cb;"></span>(#7595cb)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/seodaemun.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_11.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">서대문구립도서관<span>(SeoDaeMun Lib)</span></h3>
-									<p><b>사업기간</b> : 2022.11 ~ 2022.12</p>
-									<p><b>발주처</b> : 서대문구립도서관</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background: #6b6ab0 ;"></span>(#6b6ab0)</p>
-											<p>Sub <span style="background: #8f8ed4;"></span>(#8f8ed4)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/gangnam.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_01.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">강남구립도서관<span>(Gangnam-gu Lib)</span></h3>
-									<p><b>사업기간</b> : 2021.06 ~ 2021.09</p>
-									<p><b>발주처</b> : 강남구도서관사업소</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background:#3598db;"></span>(#3598db)</p>
-											<p>Sub <span style="background:#0a518f;"></span>(#0a518f)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/gdbookcafe.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_21.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">강동구북카페<span>(Gangdong BookCafe)</span></h3>
-									<p><b>사업기간</b> : 2021.12 ~ 2022.02</p>
-									<p><b>발주처</b> : 강동구북카페</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background: #5d3a1e ;"></span>(#5d3a1e)</p>
-											<p>Sub <span style="background: #824714;"></span>(#824714)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/artBookBogo.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_12.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">서울아트책보고<span>(Art BookBoGo)</span></h3>
-									<p><b>사업기간</b> : 2022.09 ~ 2023.03</p>
-									<p><b>발주처</b> : (주)더그림</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background: #f45104 ;"></span>(#f45104)</p>
-											<p>Sub <span style="background: #ffd900;"></span>(#ffd900)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/goyang.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_04.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">고양시립도서관<span>(Goyang Library)</span></h3>
-									<p><b>사업기간</b> : 2022.11 ~ 2023.06</p>
-									<p><b>발주처</b> : 고양시도서관사업소</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background: #967759 ;"></span>(#967759)</p>
-											<p>Sub <span style="background: #bca280;"></span>(#bca280)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/list/songpa.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/portfolio/web_lib_15.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">송파구립도서관<span>(Songpa Library)</span></h3>
-									<p><b>사업기간</b> : 2021.08 ~ 2022.02</p>
-									<p><b>발주처</b> : 송파구도서관사업소</p>
-									<div class="color">
-										<p><b>color</b></p>
-										<div>
-											<p>Main <span style="background: #3a5fc9 ;"></span>(#3a5fc9)</p>
-											<p>Sub <span style="background: #8ba9fc;"></span>(#8ba9fc)</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						
-						
-					</div>
-					<!--<div class="swiperBtnGroup">
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>-->
-					<div class="swiper-pagination"></div>
-				</div>
-			</div>
-			<div class="btnGroup center">
-				<a href="page/work_portfolio.html" class="btn">전체보기</a>
-			</div>
-		</div>
-	</div>
+                    <li class="section-project__item">
+                        <a href="https://www.snlib.go.kr/intro/index.do" target="_blank" title="성남시립도서관 바로가기">
+                            <div class="section-project__item-num">3.</div>
+                            <h2 class="section-project__item-title">성남시립도서관</h2>
+                            <div class="section-project__item-desc">
+                                <p>성남시립도서관 부분개편 사업으로 기존 노후화된 레이아웃을 보완하고자 프로젝트를 담당하였습니다.<br>
+                                    성남시 도서관의 수가 많아 분관 웹페이지가 다수 존재했고 해당 사이트마다 각각 index.html의 head에서 스타일시트 및 js를 include하여
+                                    공통된 15~20개의 파일이 존재했으며 중복 코드를 개선하고자 해당 스타일시트들을 종합하여 하나의 css로 통합하였고
+                                    도서관별로 클래스를 지정하여 공통의 include되도록 구성하였습니다.
+                                </p>
+                                <span>#기여도 100%</span>
+                                <span>#HTML5</span>
+                                <span>#CSS</span>
+                                <span>#JQuery</span>
+                                <span>#javascript</span>
+                                <span>#swiper.js</span>
+                                <span>#웹접근성 마크 취득</span>
+                            </div>
+                        </a>
+                    </li>
 
-	<div class="section section4">
-		<div class="innerWrap">
-			<h3 class="title">
-				<p>Skill PortFolio</p>
-				<p>Skill PortFolio</p>
-			</h3>
-			<div class="box">
-				<div class="swiper skillSwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<a href="https://startling-frangipane-d02a56.netlify.app/" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_14.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">예산 계산기</h3>
-									<p><b>설명</b> React로 만든 예산계산기 입니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_react.png" alt="react"> REACT</div>
-											<div><img src="include/image/main/ico_js.png" alt="javasciprt"> JAVASCRIPT</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/counting/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_04.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">카운트효과</h3>
-									<p><b>설명</b> 정수값을 변수에 넣어 3자리마다 쉼표로 구분하였습니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_jquery.png" alt="jquery"> JQUERY</div>
-											<div><img src="include/image/main/ico_js.png" alt="javasciprt"> JAVASCRIPT</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/acodian_swiper/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_02.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">아코디언 슬라이더<span>(Acodian Slider)</span></h3>
-									<p><b>설명</b> 아코디언 형태의 슬라이더입니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_html5.png" alt="HTML5"> HTML5</div>
-											<div><img src="include/image/main/ico_css.png" alt="CSS3"> CSS3</div>
-											<div><img src="include/image/main/ico_plugin.png" alt="javasciprt"> Swiper.js, GSAP, Jquery</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/wave/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_07.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">파도효과<span>(wave)</span></h3>
-									<p><b>설명</b> CANVAS로 파도효과 구현</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_html5.png" alt="CANVAS"> CANVAS</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/scrollMagic/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_10.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">스크롤매직<span>(Scroll-Magic)</span></h3>
-									<p><b>설명</b> 스크롤트리거, gsap을 활용하여 만든 스크롤 예제입니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_jquery.png" alt="jquery"> JQUERY</div>
-											<div><img src="include/image/main/ico_js.png" alt="javasciprt"> JAVASCRIPT</div>
-											<div><img src="include/image/main/ico_plugin.png" alt="javasciprt"> ScrollTriger, GSAP</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/typing/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_11.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">타이핑효과<span>(Typing)</span></h3>
-									<p><b>설명</b> 타이핑하듯이 글자가 출력되는 예제입니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_jquery.png" alt="jquery"> JQUERY</div>
-											<div><img src="include/image/main/ico_js.png" alt="javasciprt"> JAVASCRIPT</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/cardGame/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_08.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">카드게임<span>(CardGame)</span></h3>
-									<p><b>설명</b> 카드 뒤집기 게임입니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_jquery.png" alt="jquery"> JQUERY</div>
-											<div><img src="include/image/main/ico_js.png" alt="javasciprt"> JAVASCRIPT</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/random_thumb/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_09.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">랜덤썸네일<span>(Random-Thumbnail)</span></h3>
-									<p><b>설명</b> 빈 이미지에 랜덤값으로 이미지가 부여되도록 설정한 예제입니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_jquery.png" alt="jquery"> JQUERY</div>
-											<div><img src="include/image/main/ico_js.png" alt="javasciprt"> JAVASCRIPT</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/vue.js/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_12.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">Vue.js</h3>
-									<p><b>설명</b> vue.js 스터디에제</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_plugin.png" alt="javasciprt"> VUE.js</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="page/myWeb/NetCanvas/index.html" target="_blank" title="새창열림">
-								<div class="imgArea">
-									<img src="include/image/skill/skill_13.jpg">
-								</div>
-								<div class="txtArea">
-									<h3 class="title">그물효과<span>(Net Effect)</span></h3>
-									<p><b>설명</b> 구글링 중 신기한 canvas 효과가 있어서 로컬에 적용해보았습니다.</p>
-									<div class="row f_start">
-										<p><b>사용기술</b></p>
-										<div>
-											<div><img src="include/image/main/ico_html5.png" alt="CANVAS"> Canvas</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						
-						
-					</div>
-					<!--<div class="swiperBtnGroup">
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>-->
-					<div class="swiper-pagination"></div>
-				</div>
-			</div>
-			<div class="btnGroup center">
-				<a href="page/skill_portfolio.html" class="btn">전체보기</a>
-			</div>
-		</div>
-	</div>
+                    <li class="section-project__item">
+                        <a href="https://www.seongnam.go.kr/livingComplain/index.jsp" target="_blank" title="성남시 생활민원사이트 바로가기">
+                            <div class="section-project__item-num">4.</div>
+                            <h2 class="section-project__item-title">성남시 생활민원사이트</h2>
+                            <div class="section-project__item-desc">
+                                <p>
+                                    성남시청 별도플랫폼 작업으로 시청에서 강조하고자 하는 주제를 사용자에게 제공하고자 하여 프로젝트를 진행하였습니다.
+                                    타이틀 및 소주제가 많이 변경되지 않는다고 하여 CMS없이 하드코딩으로 진행되었고 단순하게 절대경로를 링크로 이어주기만 하면 되는
+                                    작업이라 큰 공수는 없었습니다.<br>
+                                    작업하며 간단한 Bounce Effect 및 fade-in-out의 애니메이션을 추가하여 동적인 요소도 소소하게 챙겼습니다.
+                                </p>
+                                <span>#기여도 100%</span>
+                                <span>#HTML5</span>
+                                <span>#CSS</span>
+                                <span>#JQuery</span>
+                            </div>
+                        </a>
+                    </li>
 
-	<div class="section section5">
-		<div class="innerWrap">
-			<h3 class="title">
-				<p>TimeLine</p>
-				<p>TimeLine</p>
-			</h3>
-			<div class="box">
-				<div class="inner">
-					<ul>
-						<li>
-							<div class="row">
-								<p class="tit jnet">제이넷</p>
-								<p class="group">UI/UX팀 <b>대리</b></p>
-								<p class="date"><b>2021.03 ~ 2024.04</b></p>
-								<p class="con">도서관 및 공공기관 프로젝트 구축, 리뉴얼, 솔루션 업데이트, 유지보수</p>
-							</div>
-							<div class="detail">
-								<p>성남시청, 국립중앙도서관, 성남시립도서관, 화성시립도서관, 동대문구립도서관, 중구구립도서관, 서대문구립도서관, 하상장애인복지관, 남양주시도서관...</p>
-							</div>
-						</li>
-						<li>
-							<div class="row">
-								<p class="tit wisa">위사</p>
-								<p class="group">UX그룹 <b>대리</b></p>
-								<p class="date"><b>2020.07 ~ 2020.12</b></p>
-								<p class="con">자체 서비스 발굴 및 개발 / 대기업 온라인쇼핑몰 프로젝트 구축 대행</p>
-							</div>
-							<div class="detail">
-								<p>IDF MALL, 대현인사이드, 지오다노, 에스더포뮬러, 이현어패럴, 남유네, ANANTI, 용대황태푸드, 인동에프엔...</p>
-							</div>
-						</li>
-						<li>
-							<div class="row">
-								<p class="tit design">디자인주식회사</p>
-								<p class="group">IT팀 <b>대리</b></p>
-								<p class="date"><b>2020.01 ~ 2020.06</b></p>
-								<p class="con">자사 쇼핑몰 관리 및 기업페이지 리뉴얼, 유지보수</p>
-							</div>
-							<div class="detail">
-								<p>디자인주식회사 홈페이지, 코끼리 STORE, 코끼리 SMART STORE, 코끼리 B2B, 코끼리 BOX, Dr.Bella...</p>
-							</div>
-						</li>
-						<li>
-							<div class="row">
-								<p class="tit eims">아임스인터내셔널</p>
-								<p class="group">시스템관리부 <b>사원</b></p>
-								<p class="date"><b>2018.11 ~ 2020.01</b></p>
-								<p class="con">사전등록페이지 및 홈페이지 제작, 웹디자인, 웹메일</p>
-							</div>
-							<div class="detail">
-								<p>SPOEX, In-cosmetics Korea, Semicon-korea, 베이비페어, NU-SKIN, K-fairs...</p>
-							</div>
-						</li>
-						<li>
-							<div class="row">
-								<p class="tit sisoft">에스아이소프트</p>
-								<p class="group">디자인팀 <b>사원</b></p>
-								<p class="date"><b>2018.07 ~ 2018.11</b></p>
-								<p class="con">블로그 위젯코드 제작, 스킨 제작, 자사솔루션 기능개선</p>
-							</div>
-						</li>
-						<li>
-							<div class="row">
-								<p class="tit nsglobal">엔에스글로벌</p>
-								<p class="group">시스템관리부 <b>사원</b></p>
-								<p class="date"><b>2017.01 ~ 2017.08</b></p>
-								<p class="con">자사 오픈마켓 관리, HTML, 문서작성, 더존, 전산입력</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <li class="section-project__item">
+                        <a href="https://www.daehyuninside.com/" target="_blank" title="대현인사이드 바로가기">
+                            <div class="section-project__item-num">5.</div>
+                            <h2 class="section-project__item-title">대현인사이드</h2>
+                            <div class="section-project__item-desc">
+                                <p>대현인사이드 전면개편 및 허브플랫폼 구축 사업으로 각 브랜딩페이지 메인과 상세페이지 작업을 담당하였습니다.<br>
+                                    6개 브랜드의 메인 작업과 상세페이지 쿠폰 다운로드, 추가 프로그램기능, 리뷰페이지 레이아웃을 구성하였고<br>
+                                    사용자가 원하는 카테고리 및 정보에 정확하게 닿을 수 있도록 UI를 직관적으로 구성하였습니다.
+                                </p>
+                                <span>#기여도 50%</span>
+                                <span>#HTML5</span>
+                                <span>#CSS</span>
+                                <span>#JQuery</span>
+                                <span>#sticky.js</span>
+                                <span>#niceScroller.js</span>
+                            </div>
+                        </a>
+                    </li>
 
-	<div class="footer">
+                    <li class="section-project__item">
+                        <a href="https://www.idfmall.co.kr/" target="_blank" title="IDF몰 바로가기">
+                            <div class="section-project__item-num">6.</div>
+                            <h2 class="section-project__item-title">IDF 몰</h2>
+                            <div class="section-project__item-desc">
+                                <p>IDF몰 Gnb개편 프로젝트를 담당하였습니다.<br>
+                                    기존 카테고리 분류를 재정비하고 디자인 변경 및 검색기능 개선, 브랜드페이지 추가작업을 진행하였습니다.
+                                </p>
+                                <span>#기여도 100%</span>
+                                <span>#HTML5</span>
+                                <span>#CSS</span>
+                                <span>#JQuery</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btnGroup">
+                    <a href="https://mirror-soldier-be2.notion.site/1480dfb3209744cbb89b507e9284ffbe" class="btn" target="_blank" title="notion(경력기술) 바로가기">경력기술서 보기</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section section-marquee">
+            <div class="marquee">
+                <div class="marquee__inner forward">
+                    <div class="marquee__part">UI/UX Create UI/UX Create UI/UX Create</div>
+                </div>
+                <div class="marquee__inner reverse">
+                    <div class="marquee__part">HTML HTML HTML HTML HTML HTML HTML </div>
+                </div>
+                <div class="marquee__inner forward">
+                    <div class="marquee__part">CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS</div>
+                </div>
+                <div class="marquee__inner reverse">
+                    <div class="marquee__part">JQuery JQuery JQuery JQuery JQuery </div>
+                </div>
+                <div class="marquee__inner forward">
+                    <div class="marquee__part">JavaScript JavaScript JavaScript  JavaScript  JavaScript  JavaScript </div>
+                </div>
+                <div class="marquee__inner reverse">
+                    <div class="marquee__part">PUBLISING PUBLISING PUBLISING PUBLISING PUBLISING PUBLISING PUBLISING</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section section-contact">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                  <source src="./include/image/sample_55.mp4" type="video/mp4" />
+                </video>
+                <div class="videoText">
+                    <div>
+                        <p>@ Contact 💬</p>
+                    </div>
+                    <div>
+                        <h2>ckdrhs50@gmail.com</h2>
+                    </div>
+                    <div>
+                        <span>⬛⬜◼◻ 😄 ◻◼⬜⬛</span>
+                    </div>
+                </div>
+            </div>
+            <div class="textWrap">
+                <p>❝ 어제보다 나은 오늘을 위해 ❞</p>
+                <span>❝ <em>Better Than Yesterday</em> ❞</span>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
 		<p>해당 페이지는 상업적 목적이 아닌 개인 목적으로 제작하였습니다.</p>
 		<p>© 2024. All Rights Reserved.</p>
 	</div>
+    <div class="cursor"></div>
 </body>
 
 <script>
 
-    var swiper = new Swiper(".workSwiper", {
-		slidesPerView: 1.5,
-		slidesPerGroupAuto: true,
-		spaceBetween: 20,
-		loop: true,
-		speed : 800,
-		 pagination: {
-			el: ".swiper-pagination",
-			type: "progressbar",
-		  },
-		  navigation: {
-			nextEl: ".workSwiper .swiper-button-next",
-			prevEl: ".workSwiper .swiper-button-prev",
-		  },
-		autoplay : false,
-		breakpoints: {
-        
-          1024: {
-            slidesPerView: 3,  //브라우저가 1024보다 클 때
-			spaceBetween: 30,
-          },
-		  768: {
-            slidesPerView: 2.5,  //브라우저가 768 클 때
-			spaceBetween: 20,
-          },
-		  640: {
-            slidesPerView: 1.5,  //브라우저가 640 클 때
-			spaceBetween: 20,
-          },
-        },
-	});
 
-	var swiper = new Swiper(".skillSwiper", {
-		slidesPerView: 1.5,
-		slidesPerGroupAuto: true,
-		spaceBetween: 20,
-		loop: true,
-		speed : 800,
-		 pagination: {
-			el: ".swiper-pagination",
-			type: "progressbar",
-		  },
-		  navigation: {
-			nextEl: ".workSwiper .swiper-button-next",
-			prevEl: ".workSwiper .swiper-button-prev",
-		  },
-		autoplay : false,
-		breakpoints: {
-        
-          1024: {
-            slidesPerView: 3,  //브라우저가 1024보다 클 때
-			spaceBetween: 30,
-          },
-		  768: {
-            slidesPerView: 2.5,  //브라우저가 768 클 때
-			spaceBetween: 20,
-          },
-		  640: {
-            slidesPerView: 1.5,  //브라우저가 640 클 때
-			spaceBetween: 20,
-          },
-        },
-	});
-
-	$(window).scroll(function() {
-		if($(window).scrollTop() > 1) {
-			$('header').addClass("on");
-		} else {
-			$('header').removeClass("on");
-		}
-
-		const section1Height = $(".section1").height() - 60;
-		const section2Height = $(".section2").height();
-		
-		if($(window).scrollTop() > 1) {
-			$(".fix_bn").addClass("on");
-		} else {
-			$(".fix_bn").removeClass("on");
-		}
-	});
-
-	gsap.to('text', {
-		scrollTrigger : {
-			trigger: 'svg',
-			start: 'bottom 80%',
-			end: 'bottom 20%',
-			scrub: 2,
-			markers:false,
-		},
-		scale: 0.9,
-		opacity: 0,
-		transformOrigin: 'center',
-		duration: 2,
-		ease: 'power4.out'
-	})
-
-	gsap.to('#section-slogan h1 div', {
-		duration:0.3,
-		y:0,
-		stagger:0.1,
-		scrollTrigger: {
-			trigger: "#section-slogan h1 div",
-			markers: false,
-			scrub: 5,
-			start: 'top center',
-			end: 'top center',
-			toggleActions: "restart none reverse none"
-		}
-	});
-
-	gsap.to(".text p", {
-		backgroundPositionX: "0%",
-		stagger: 0.1,
-		scrollTrigger: {
-			trigger: ".text",
-			markers: false,
-			scrub: 1,
-			y:50,
-			start: "top center",
-			end: "bottom center",
-		}
-	});
-
-
-
-
-  </script>
+</script>
 
 </html>

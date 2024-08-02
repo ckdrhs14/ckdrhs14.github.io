@@ -67,10 +67,17 @@
 		 url('../font/Pretendard-Black.woff') format('woff'), /* Modern Browsers */
 }
 
+@font-face {
+	font-family: 'omyu_pretty';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* reset */
 *, *::before, *::after{box-sizing: border-box;}
 html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; height: 100%;}
-body {font-size:18px; line-height:1.6;}
+body {line-height:1.6;}
 html, body, div, span, iframe, p, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, select, table, th, td, article, aside, section, figure, figcaption, img {margin: 0; padding: 0; border: 0;}
 iframe {overflow: auto; width: 100%; border: 0;}
 table {width: 100%; border-collapse: separate; border-spacing: 0; font-size: inherit;}
@@ -78,7 +85,7 @@ th, td {font-size: inherit; line-height: inherit; word-break: normal;}
 h1, h2, h3, h4, h5, h6 {font-weight:600;}
 ol, ul {list-style: none;}
 img {max-width: 100%; max-height: 100%;}
-a {text-decoration: none; color: inherit;}
+a {text-decoration: none; color: var(--main-font-color);}
 address, cite, em {font-style: normal;}
 caption, legend {overflow: hidden; width: 0; height: 0; line-height: 0; text-indent: -9999em;}
 input, textarea, select, optgroup, button {font-size: inherit; font-family: inherit; line-height: inherit;}
@@ -94,6 +101,7 @@ button,input[type="button"], input[type="reset"], input[type="submit"] {overflow
 button {border: 0; background-color: transparent;}
 form, fieldset {width:100%;}
 
+
 * {
     margin: 0;
     -webkit-user-select: none;
@@ -102,11 +110,19 @@ form, fieldset {width:100%;}
     -o-user-select: none;
     user-select: none;
 }
+
 body {
   position:relative;
   font-family:"Pretendard";
   background: var(--main-bg-color); color: var(--main-font-color);
-  transition:all .5s;
+}
+
+a {
+	text-decoration: none;
+	color:var(--main-font-color);
+	&:visited, &:hover, &:focus, &:active {
+		text-decoration: none;
+	}
 }
 
 img { -webkit-user-drag: none;
@@ -118,47 +134,22 @@ img { -webkit-user-drag: none;
   max-height:$full;
 }
 
-:root {--main-bg-color:#000; --main-font-color:#fff;}
-
-#drawing_line {
-	position: relative;
-	z-index: 1500;
-	height: 0;
-	> svg {
-		@include position(fixed, $top:0, $left:0);
-		position: fixed; left: 0; top: 0; 
-		width: $full; 
-		height: $full; 
-		z-index: 1; 
-		pointer-events: none;
-		.drawing_line_polyline {
-			fill: none; 
-			stroke: #ddd;
-			stroke-width: 2;
-			opacity:.7;
-		}
-		.drawing_line_circle {
-			fill: #ddd;
-			opacity:.7;
-		}
-	}
+:root {
+	--main-bg-color:#000;
+	--main-font-color:#fff;
 }
 
-
 .btnGroup {
-	margin:30px 0;
-	&.center {
-		text-align:center;
-	}
+	text-align:center;
 }
 
 .btn {
 	display:inline-block;
 	color:#fff;
-	padding:15px 60px;
+	padding:2rem 10rem;
 	@include transition;
 	position: relative;
-	font-size:1em;
+	font-size:2rem;
 	&::before {
 		content: '';
 		@include position(absolute, $top:0, $left:0);
@@ -189,52 +180,26 @@ img { -webkit-user-drag: none;
 }
 
 
-
-.swiper {
-  width: $full;
-  height: $full;
-}
-
-.swiper-slide {
-	img {
-		display: block;
-		width: $full;
-		height: $full;
-		object-fit: cover;
-	}
-}
-
-
-@media screen and (max-width: 1400px){
-	body {
-		font-size:17px;
-	}
-}
-
-@media screen and (max-width: 1024px){
-	body {
-		font-size:16px;
-	}
-}
-
-@media screen and (max-width: 640px){
-	body {
-		font-size:14px;
-	}
-	.mobileHide3 {
-		display:none !important;
-	}
-
-	.btnGroup {
-		margin:15px 0;
-	}
+@media screen and (max-width: 1400px) {
 	.btn {
-		padding:12px 45px;
+		padding:1.8rem 8rem;
+		font-size:1.6rem;
 	}
 }
 
-@media screen and (max-width: 500px){
-	.mobileHide4 {
-		display:none !important;
+@media screen and (max-width: 1024px) {
+	.btn {
+		padding:1.5rem 6rem;
+		font-size:1.6rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.btn {
+		padding:1.5rem 4.5rem;
+		font-size:1.4rem;
+		display: block;
+		margin:0 5vw;
+		width:calc(100% - 10vw);
 	}
 }

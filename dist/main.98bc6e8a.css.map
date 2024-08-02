@@ -1,1 +1,0 @@
-{"version":3,"sources":["include\\css\\main.scss"],"names":[],"mappings":"AAAA;EACI;;AACA;EACI","file":"main.98bc6e8a.css","sourceRoot":"..","sourcesContent":["body {\r\n    display: none !important;\r\n    div {\r\n        background:blue;\r\n    }\r\n}"]}
