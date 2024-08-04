@@ -87,6 +87,11 @@ $(function(){
         duration: 1
     },1.3)
 
+    gsap.to('.main-section .scrollDown', {
+        opacity: 1,
+        duration: 1
+    },4.2)
+
     
 
 
