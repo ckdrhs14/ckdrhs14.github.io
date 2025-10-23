@@ -829,7 +829,7 @@ main {
     width: 26px;
   }
   .header-module.nav-up {
-    top: -60px;
+    top: 0;
   }
   .header-module .logo a {
     font-size: 2.6rem;
